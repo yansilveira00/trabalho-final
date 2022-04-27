@@ -27,7 +27,7 @@ const Menu = () => {
                         </NavItem>
 
                         <NavItem>
-                            <NavLink href="/projeto">Projeto</NavLink>
+                            <NavLink href="/projetos">Projeto</NavLink>
                         </NavItem>
                         
                         <NavItem>

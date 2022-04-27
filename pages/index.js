@@ -6,7 +6,9 @@ function Home() {
     return (
         <div>
             <Menu />
-            Home            
+            Home
+            Já ouviu falar em robótica no IF?
+                       
         </div>
     );
 }

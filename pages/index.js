@@ -48,29 +48,31 @@ function Home() {
                     <div class="row">
                         <div class="col-lg-4">
                             <div className="rounded-circle circulo centralizar">
-
+                                Â
                             </div>
                             
-                            <h2>Ângella</h2>
+                            <h2 className='mt-4 mt-4'>Ângella</h2>
                             <p>Licenciatura em Física</p>
                             
                         </div>
                         <div class="col-lg-4">
                             <div className="rounded-circle circulo centralizar">
-
+                                w
                             </div>
 
-                            <h2>Wellison</h2>
+                            <h2 className='mt-4 mt-4'>Wellison</h2>
                             <p>Técnico em Informática</p>
                             
                         </div>
                         <div class="col-lg-4">
+                                
+                        
 
                             <div className="rounded-circle circulo centralizar">
-
+                               MP
                             </div>
 
-                            <h2>Maria da Penha</h2>
+                            <h2 className='mt-4 mt-4'>Maria da Penha</h2>
                             <p>Coordenado e docente de física</p>
                     
                         </div>
@@ -79,7 +81,7 @@ function Home() {
 
                         
 
-                        <div class="row featurette">
+                        <div  class="row featurette">
                         <div class="col-md-7">
                             <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
                             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>

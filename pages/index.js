@@ -54,8 +54,8 @@ function Home() {
                         <p className='lead'>A robótica é um projeto de extenção do IF Salinas, que foi fundado em 2018.</p>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-4">
+                    <div className="row">
+                        <div className="col-lg-4">
                             <div >
                                 <img className="ang " src="ang_joca.png" />
                             </div>
@@ -64,8 +64,8 @@ function Home() {
                             <p>Licenciatura em Física</p>
                             
                         </div>
-                        <div class="col-lg-4">
-                            <div className="rounded-circle circulo centralizar">
+                        <div className="col-lg-4">
+                            <div >
                                 <img className="welisom" src="welisom_joca.png" />
                             </div>
 
@@ -73,11 +73,8 @@ function Home() {
                             <p>Técnico em Informática</p>
                             
                         </div>
-                        <div class="col-lg-4">
-                                
-                        
-
-                            <div className="rounded-circle circulo centralizar">
+                        <div className="col-lg-4">
+                            <div >
                                 <img className="penha" src="penha_joca.png" />
 
                             </div>
@@ -91,13 +88,13 @@ function Home() {
 
                         
 
-                        <div  class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <div  className="row featurette">
+                        <div className="col-md-7">
+                            <h2 className="featurette-heading">A WallBotz é um projeto de robótica do IFNMG-Campus Salinas. <span class="text-muted">Criado com o objetivo de transformar o processo de aprendizagem utilizando mecanismos tecnológicos como ferramenta educacional.</span></h2>
+                            <p className="lead">Atualmente temos estudantes de Licenciatura em Física e Sistemas de Informação.</p>
                         </div>
-                        <div class="col-md-5">
-                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                        <div className="col-md-5">
+                            <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
                         </div>
                         </div>
 

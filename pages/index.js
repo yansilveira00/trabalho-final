@@ -34,7 +34,7 @@ function Home() {
 
                 }
 
-                .ang{
+                .ang, .penha, .welisom{
                     width= 100px;
                     height= 100px;
                     font-size= 40px; 
@@ -44,11 +44,6 @@ function Home() {
                     margin: 0 auto !important;
                     float: none !important;
                 }
-                .penha{
-                    width= 100px;
-                    height= 100px;
-                    font-size= 40px; 
-                    padding-top= 20px;  
 
                 }`}</style>
 
@@ -71,7 +66,7 @@ function Home() {
                         </div>
                         <div class="col-lg-4">
                             <div className="rounded-circle circulo centralizar">
-                               
+                                <img className="welisom" src="welisom_joca.png" />
                             </div>
 
                             <h2 className='mt-4 mt-4'>Wellison</h2>
@@ -83,7 +78,8 @@ function Home() {
                         
 
                             <div className="rounded-circle circulo centralizar">
-                                <img className="penha " src="penha.png" />
+                                <img className="penha" src="penha_joca.png" />
+
                             </div>
 
                             <h2 className='mt-4 mt-4'>Maria da Penha</h2>

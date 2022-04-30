@@ -1,12 +1,12 @@
 import Menu from '../components/Menu';
-
+import React from 'react';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 
 import { Jumbotron, Container } from 'reactstrap';
 
-function Home() {
-    return (
+const Home = (data) => (
         <div>
 
             <Head>
@@ -96,24 +96,21 @@ function Home() {
                         <div className="col-md-5">
                             <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
                         </div>
-                        </div>
-
-                      
-
-                        
-
-                        
-                    
+                        </div>               
 
                 </Container>
-
                
             </Jumbotron>
 
-
-
         </div>
     );
-}
+
+    Home.getInitialProps = async () => {
+       var response = await axios.get('http://localhost:8010/home');
+
+       console.log(response);
+
+       return {response: response.data}
+    }
 
 export default Home;

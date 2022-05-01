@@ -45,7 +45,7 @@ function QuemSomos() {
                         <h3 class="pb-4 mb-4 fst-italic border-bottom">
                             O Começo de Tudo
                         </h3>
-
+                        
                         <article>
                             <p>Os alunos do Instituto Federal do Norte de Minas Gerais, Ângella e Wellison, munidos pela vontade de criar um projeto de extensão voltado para a robótica, buscaram um(a) coordenador(a) para o mesmo, encontrando a Docente Maria da Penha, juntos criaram o projeto.</p>
                             <hr/>

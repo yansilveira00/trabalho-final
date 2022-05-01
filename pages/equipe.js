@@ -9,15 +9,40 @@ function Equipe() {
         <div>
             <Menu />
             
-            <Jumbotron>
-            <style>{`.sobre{
+            <Jumbotron fluid className="projetos">
+            <style>{`.projetos{
                         padding-top: 80px;
                         padding-bottom: 80px;
                         background-color: #DAA520;
                         color: #fff;
                         margin-bottom: 0rem !important;
+
+                }
+                .circulo{
+                    width: 140px;
+                    height: 140px;
+                    background-color: blue;
+                    font-size: 52px;
+                    padding-top: 24px;
+
+                }
+
+                .ang, .penha, .welisom{
+                    width= 100px;
+                    height= 100px;
+                    font-size= 40px; 
+                    padding-top= 20px; 
+                }
+                .centralizar{
+                    margin: 0 auto !important;
+                    float: none !important;
+                }
+                .featurette-divider {
+                    margin: 5rem 0; 
+                  }
+
                 }`}</style>
-                <Container>
+                <Container className='text-center'>
 
                     <div className='text-center'>
                         <h1 className='display-4'>Equipe da Robótica!</h1>
@@ -26,7 +51,18 @@ function Equipe() {
                 </Container>
             </Jumbotron>
 
-            <Jumbotron>
+            <Jumbotron fluid className="head-sobre">
+            <style>{`.head-sobre{
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                        background-color: #DAA520;
+                        color: #fff;
+                        margin-bottom: 0rem !important;
+                    }
+                    .featurette-divider {
+                        margin: 5rem 0; 
+                      }
+                }`}</style>
                 <Container>
                     <div>
 

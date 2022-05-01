@@ -44,6 +44,9 @@ const Home = (data) => (
                     margin: 0 auto !important;
                     float: none !important;
                 }
+                .featurette-divider {
+                    margin: 5rem 0; 
+                  }
 
                 }`}</style>
 
@@ -54,6 +57,8 @@ const Home = (data) => (
                         <h1 className='display-4'>{data.response.titulo}</h1>
                         <p className='lead'>{data.response.subtitulo}</p>
                     </div>
+
+                    <hr class="featurette-divider"/>
 
                     <div className="row">
                         <div className="col-lg-4">
@@ -88,7 +93,7 @@ const Home = (data) => (
 
                         </div>
 
-                        
+                        <hr class="featurette-divider"/>
 
                         <div  className="row featurette">
                         <div className="col-md-7">

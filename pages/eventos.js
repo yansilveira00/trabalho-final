@@ -8,10 +8,21 @@ function Eventos() {
     return (
         <div>
             <Menu />
-            Eventos da Robótica!
+            
             <Jumbotron>
-                <Container>
-                    <h1>Eventos da Robótica!</h1>
+            <style>{`.sobre{
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                        background-color: #DAA520;
+                        color: #fff;
+                        margin-bottom: 0rem !important;
+                }`}</style>
+                <Container >
+                    <div className='text-center'>
+                        <h1 className='display-4'>Eventos da Robótica!</h1>
+
+                    </div>
+                    
                 </Container>
             </Jumbotron>
         </div>

@@ -103,7 +103,9 @@ const Home = (data) => (
                         <div className="col-md-5">
                             <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
                         </div>
-                        </div>               
+                        </div>
+
+                                  
 
                 </Container>
                

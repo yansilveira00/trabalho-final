@@ -50,8 +50,9 @@ const Home = (data) => (
 
                 <Container className='text-center'>
                     <div>
-                        <h1 className='display-4'>Já ouviu falar em robótica no IF?</h1>
-                        <p className='lead'>A robótica é um projeto de extenção do IF Salinas, que foi fundado em 2018.</p>
+                        {console.log(data)}
+                        <h1 className='display-4'>{data.response.titulo}</h1>
+                        <p className='lead'>{data.response.subtitulo}</p>
                     </div>
 
                     <div className="row">
@@ -60,8 +61,8 @@ const Home = (data) => (
                                 <img className="ang " src="ang_joca.png" />
                             </div>
                             
-                            <h2 className='mt-4 mt-4'>Ângella</h2>
-                            <p>Licenciatura em Física</p>
+                            <h2 className='mt-4 mt-4'>{data.response.servUmTitulo}</h2>
+                            <p>{data.response.servUmDescricao}</p>
                             
                         </div>
                         <div className="col-lg-4">
@@ -69,8 +70,8 @@ const Home = (data) => (
                                 <img className="welisom" src="welisom_joca.png" />
                             </div>
 
-                            <h2 className='mt-4 mt-4'>Wellison</h2>
-                            <p>Técnico em Informática</p>
+                            <h2 className='mt-4 mt-4'>{data.response.servDoisTitulo}</h2>
+                            <p>{data.response.servDoisDescricao}</p>
                             
                         </div>
                         <div className="col-lg-4">
@@ -79,8 +80,8 @@ const Home = (data) => (
 
                             </div>
 
-                            <h2 className='mt-4 mt-4'>Maria da Penha</h2>
-                            <p>Coordenado e docente de física</p>
+                            <h2 className='mt-4 mt-4'>{data.response.servTresTitulo}</h2>
+                            <p>{data.response.servTresDescricao}</p>
                     
                         </div>
 
@@ -108,7 +109,7 @@ const Home = (data) => (
     Home.getInitialProps = async () => {
        var response = await axios.get('http://localhost:8010/home');
 
-       console.log(response);
+       console.log(response.data);
 
        return {response: response.data}
     }

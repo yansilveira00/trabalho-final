@@ -84,6 +84,7 @@ const Home = (data) => (
                             <p>{data.response.servTresDescricao}</p>
                     
                         </div>
+                        
 
                         </div>
 
@@ -91,8 +92,8 @@ const Home = (data) => (
 
                         <div  className="row featurette">
                         <div className="col-md-7">
-                            <h2 className="featurette-heading">A WallBotz é um projeto de robótica do IFNMG-Campus Salinas. <span class="text-muted">Criado com o objetivo de transformar o processo de aprendizagem utilizando mecanismos tecnológicos como ferramenta educacional.</span></h2>
-                            <p className="lead">Atualmente temos estudantes de Licenciatura em Física e Sistemas de Informação.</p>
+                            <h2 className="featurette-heading">{data.response.servQuatroTitulo} <span class="text-muted">{data.response.servQuatroSubtitulo}</span></h2>
+                            <p className="lead">{data.response.servQuatroDescricao}</p>
                         </div>
                         <div className="col-md-5">
                             <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>

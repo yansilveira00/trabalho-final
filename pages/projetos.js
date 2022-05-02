@@ -28,93 +28,85 @@ function Projetos() {
                 </Container>
             </Jumbotron>
 
-            <Jumbotron>
+            <Jumbotron fluid className='sobre'>
             
                 <Container>
+                    <div class="row featurette">
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading"> Carrinho de controle remoto feito de palitos de picolé. <span class="text-muted"></span></h2>
+                        <p class="lead"></p>
+                      </div>
+                      <div class="col-md-5">
+                      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="carrinho.jpeg" width="500" height="500" focusable="false"></img>
 
-                    
+                      </div>
+                    </div>
+
+                    <hr class="featurette-divider"/>
 
                     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading"> Carrinho de controle remoto feito de palitos de picolé. <span class="text-muted"></span></h2>
-        <p class="lead"></p>
-      </div>
-      <div class="col-md-5">
-      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
+                      <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading"> Braço Robotico <span class="text-muted"></span></h2>
+                        <p class="lead"></p>
+                      </div>
+                      <div class="col-md-5 order-md-1">
+                      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="robotico.jpg" width="500" height="500" focusable="false"></img>
 
-      </div>
-    </div>
+                      </div>
+                    </div>
 
-    <hr class="featurette-divider"/>
+                    <hr class="featurette-divider"/>
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading"> Braço Robotico <span class="text-muted"></span></h2>
-        <p class="lead"></p>
-      </div>
-      <div class="col-md-5 order-md-1">
-      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
+                    <div class="row featurette">
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading">Robô Explorador <span class="text-muted"></span></h2>
+                        <p class="lead"></p>
+                      </div>
+                      <div class="col-md-5">
+                      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="esplorador.jpg" width="500" height="500" focusable="false"></img>
 
-      </div>
-    </div>
+                      </div>
+                    </div>
 
-    <hr class="featurette-divider"/>
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Robô Explorador <span class="text-muted"></span></h2>
-        <p class="lead"></p>
-      </div>
-      <div class="col-md-5">
-      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider"/>
+                    <hr class="featurette-divider"/>
 
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading"> Robô X1 <span class="text-muted"></span></h2>
-        <p class="lead"></p>
-      </div>
-      <div class="col-md-5">
-      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
+                    <div class="row featurette">
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading"> Robô X1 <span class="text-muted"></span></h2>
+                        <p class="lead"></p>
+                      </div>
+                      <div class="col-md-5">
+                      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="x1.jpeg" width="500" height="500" focusable="false"></img>
 
-      </div>
-    </div>
+                      </div>
+                    </div>
 
-    <hr class="featurette-divider"/>
+                    <hr class="featurette-divider"/>
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading"> Seguidor de Linhas <span class="text-muted"></span></h2>
-        <p class="lead"></p>
-      </div>
-      <div class="col-md-5 order-md-1">
-      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
+                    <div class="row featurette">
+                      <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading"> Seguidor de Linhas <span class="text-muted"></span></h2>
+                        <p class="lead"></p>
+                      </div>
+                      <div class="col-md-5 order-md-1">
+                      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="seguidor.jpg" width="500" height="500" focusable="false"></img>
 
-      </div>
-    </div>
+                      </div>
+                    </div>
 
-    <hr class="featurette-divider"/>
+                    <hr class="featurette-divider"/>
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Drone <span class="text-muted"></span></h2>
-        <p class="lead"></p>
-      </div>
-      <div class="col-md-5">
-      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
+                    <div class="row featurette">
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading">Drone <span class="text-muted"></span></h2>
+                        <p class="lead"></p>
+                      </div>
+                      <div class="col-md-5">
+                      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="drone1.jpeg" width="500" height="500" focusable="false"></img>
 
-      </div>
-    </div>
-
-
-
-                    
-
+                      </div>
+                    </div>
                 </Container>
             </Jumbotron>
         </div>

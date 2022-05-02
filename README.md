@@ -71,7 +71,7 @@ npm install --save axios
 ```
 
 * Cada página do site, será criada na pasta pages:
-https://user-images.githubusercontent.com/89039535/166301252-e3992ebd-1be7-4b8f-9884-49e430b75c22.png
+![Páginas do Site](https://user-images.githubusercontent.com/89039535/166301252-e3992ebd-1be7-4b8f-9884-49e430b75c22.png)
 
 ### Preparando o projeto para rodar no Back-End
 

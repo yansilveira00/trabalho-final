@@ -1,220 +1,124 @@
+import React from 'react';
 import Menu from '../components/Menu';
+import { UncontrolledCarousel } from 'reactstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {Jumbotron, Container} from 'reactstrap';
 
-function Equipe() {
+function Projetos() {
     return (
         <div>
             <Menu />
-            
-            <Jumbotron fluid className="projetos">
-            <style>{`.projetos{
+
+            <Jumbotron fluid className='sobre'>
+            <style>{`.sobre{
                         padding-top: 80px;
                         padding-bottom: 80px;
                         background-color: #DAA520;
                         color: #fff;
                         margin-bottom: 0rem !important;
-
-                }
-                .circulo{
-                    width: 140px;
-                    height: 140px;
-                    background-color: blue;
-                    font-size: 52px;
-                    padding-top: 24px;
-
-                }
-
-                .ang, .penha, .welisom{
-                    width= 100px;
-                    height= 100px;
-                    font-size= 40px; 
-                    padding-top= 20px; 
-                }
-                .centralizar{
-                    margin: 0 auto !important;
-                    float: none !important;
-                }
-                .featurette-divider {
-                    margin: 5rem 0; 
-                  }
-
                 }`}</style>
-                <Container className='text-center'>
-
+                <Container >
                     <div className='text-center'>
-                        <h1 className='display-4'>Equipe da Robótica!</h1>
+                    <h1 className='display-4'>Projetos</h1>
+
                     </div>
-                   
+                    
                 </Container>
             </Jumbotron>
 
-            <Jumbotron fluid className="head-sobre">
-            <style>{`.head-sobre{
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                        background-color: #DAA520;
-                        color: #fff;
-                        margin-bottom: 0rem !important;
-                    }
-                    .featurette-divider {
-                        margin: 5rem 0; 
-                      }
-                }`}</style>
+            <Jumbotron>
+            
                 <Container>
-                    <div>
 
-                    <div>   
-                        <h1 className='display-4'>Equipe</h1>
-                        <p className='lead'>2018-2021</p>
-                    </div>
+                    
 
-                    <hr class="featurette-divider"/>
+                    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"> Carrinho de controle remoto feito de palitos de picolé. <span class="text-muted"></span></h2>
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5">
+      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
 
-                    <div className="row">
+      </div>
+    </div>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="ang " src="ang_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Ângela</h2>
-                            <p>Licenciatura em Física</p>
-                            <p>2018</p>
-                        </div>
+    <hr class="featurette-divider"/>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="welisom" src="welisom_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Wellison</h2>
-                            <p>Técnico em Informática</p>
-                            <p>2018</p>   
-                        </div>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading"> Braço Robotico <span class="text-muted"></span></h2>
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="penha" src="penha_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Maria da Penha</h2>
-                            <p>Coordenadora e Docente de Física</p>
-                            <p>2018</p>
-                        </div>
-                
-                        </div>
+      </div>
+    </div>
 
-                        <hr class="featurette-divider"/>
+    <hr class="featurette-divider"/>
 
-                        <div className="row">
-                        
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="ang " src="ang_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Patrícia</h2>
-                            <p>Licenciatura em Física</p>
-                            <p>2019</p>
-                        </div>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Robô Explorador <span class="text-muted"></span></h2>
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5">
+      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="welisom" src="welisom_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Eduardo</h2>
-                            <p>Licenciatura em Física</p>
-                            <p>2019</p>  
-                        </div>
+      </div>
+    </div>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="penha" src="penha_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Paumer</h2>
-                            <p>Licenciatura em Física</p>
-                            <p>2019</p>
-                        </div>
-                
-                        </div>
+    <hr class="featurette-divider"/>
 
-                        <hr class="featurette-divider"/>
 
-                        <div className="row">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"> Robô X1 <span class="text-muted"></span></h2>
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5">
+      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="ang " src="ang_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Samuel</h2>
-                            <p>Licenciatura em Física</p>
-                            <p>2019</p>
-                        </div>
+      </div>
+    </div>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="welisom" src="welisom_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Jeferson</h2>
-                            <p>Técnico em Informática</p>
-                            <p>2019</p>    
-                        </div>
+    <hr class="featurette-divider"/>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="penha" src="penha_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Ageu</h2>
-                            <p>Técnico em Informática</p>
-                            <p>2019</p>
-                        </div>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading"> Seguidor de Linhas <span class="text-muted"></span></h2>
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
 
-                        </div>
+      </div>
+    </div>
 
-                        <hr class="featurette-divider"/>
+    <hr class="featurette-divider"/>
 
-                        <div className="row">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Drone <span class="text-muted"></span></h2>
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5">
+      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="ang " src="ang_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Rafael Henrique</h2>
-                            <p>Sistemas de Informação</p>
-                            <p>2021</p>
-                        </div>
+      </div>
+    </div>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="welisom" src="welisom_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>João Paulo</h2>
-                            <p>Sistemas de Informação</p>
-                            <p>2021</p>    
-                        </div>
 
-                        <div className="col-lg-4">
-                            <div >
-                                <img className="penha" src="penha_joca.png" />
-                            </div>
-                            <h2 className='mt-4 mt-4'>Matheus</h2>
-                            <p>Licenciatura em Física</p>
-                            <p>2018</p>
-                        </div>
 
-                        </div>
+                    
 
-                        
-
-                    </div>
                 </Container>
             </Jumbotron>
-
-
-
         </div>
     );
 }
 
-
-
-export default Equipe
+export default Projetos

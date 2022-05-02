@@ -119,16 +119,6 @@ npm install --save mongoose
 npm install --save cors
 ```
 
-* Gerar o backup do banco de dados MongoDB
-```
-mongodump --db 'nome do backup' --out C:\data\db
-```
-
-* Restaurar o backup do banco de dados MongoDB
-```
-mongorestore --db 'nome do backup' 'local do backup'
-```
-
 ## 🛠️ Construído com
 
 * [Next.JS](https://nextjs.org/docs/getting-started) - Framework Web

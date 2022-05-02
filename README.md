@@ -121,12 +121,12 @@ npm install --save cors
 
 * Gerar o backup do banco de dados MongoDB
 ```
-mongodump --db projeto-robotica --out c:\data\db
+mongodump --db 'nome do backup' --out C:\data\db
 ```
 
 * Restaurar o backup do banco de dados MongoDB
 ```
-mongorestore --db projeto-robotica c:\data\db\celke
+mongorestore --db 'nome do backup' 'local do backup'
 ```
 
 ## 🛠️ Construído com

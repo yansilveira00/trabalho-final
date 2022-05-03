@@ -1,156 +1,125 @@
 import Menu from '../components/Menu';
-
+import React from 'react';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Head from 'next/head';
 
-import {Jumbotron, Container} from 'reactstrap';
+import { Jumbotron, Container } from 'reactstrap';
 
-function Eventos() {
-    return (
+const Home = (data) => (
         <div>
+
+            <Head>
+                <title>Home-WallBotz</title>
+                <meta name='description' content='Site sobre robótica'/>
+                <meta name='autor' contet='Luiz Gustavo, Rafael Henrique e Yan Silveira'/>
+            </Head>
             <Menu />
-            
-            <Jumbotron fluid className='sobre'>
-            <style>{`.sobre{
+
+            <Jumbotron fluid className="projetos">
+                <style>{`.projetos{
                         padding-top: 80px;
                         padding-bottom: 80px;
                         background-color: #DAA520;
                         color: #fff;
                         margin-bottom: 0rem !important;
-                }`}</style>
-                <Container >
-                    <div className='text-center'>
-                        <h1 className='display-4'>Eventos da Robótica!</h1>
 
+                }
+                .circulo{
+                    width: 140px;
+                    height: 140px;
+                    background-color: blue;
+                    font-size: 52px;
+                    padding-top: 24px;
+
+                }
+
+                .ang, .penha, .welisom{
+                    width= 100px;
+                    height= 100px;
+                    font-size= 40px; 
+                    padding-top= 20px; 
+                }
+                .centralizar{
+                    margin: 0 auto !important;
+                    float: none !important;
+                }
+                .featurette-divider {
+                    margin: 5rem 0; 
+                  }
+
+                }`}</style>
+
+
+                <Container className='text-center'>
+                    <div>
+                        {console.log(data)}
+                        <h1 className='display-4'>{data.response.titulo}</h1>
+                        <p className='lead'>{data.response.subtitulo}</p>
                     </div>
+
+                    <hr class="featurette-divider"/>
+
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <div >
+                                <img className="ang " src="ang_joca.png" />
+                            </div>
+                            
+                            <h2 className='mt-4 mt-4'>{data.response.servUmTitulo}</h2>
+                            <p>{data.response.servUmDescricao}</p>
+                            
+                        </div>
+                        <div className="col-lg-4">
+                            <div >
+                                <img className="welisom" src="welisom_joca.png" />
+                            </div>
+
+                            <h2 className='mt-4 mt-4'>{data.response.servDoisTitulo}</h2>
+                            <p>{data.response.servDoisDescricao}</p>
+                            
+                        </div>
+                        <div className="col-lg-4">
+                            <div >
+                                <img className="penha" src="penha_joca.png" />
+
+                            </div>
+
+                            <h2 className='mt-4 mt-4'>{data.response.servTresTitulo}</h2>
+                            <p>{data.response.servTresDescricao}</p>
                     
-                </Container>
-            </Jumbotron >
-            
-
-            <Jumbotron fluid className='eventos_'>
-            <style>{`.eventos_{
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                        background-color: #DAA520;
-                        color: #fff;
-                        margin-bottom: 0rem !important;
-                }`}</style>
-                <Container>
-                    <div className='text-center'>
-                        <h3 className='display-4'>Feira de Ciências</h3>
-                    </div>
-                    <hr class="featurette-divider"/>
-                    <div class="row" data-masonry='{"percentPosition": true }'>
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="feira2.jpeg" width="345" height="212" focusable="false"></img>
-
-                            <div class="card-body">
-                            <h5 class="card-title">Card title that wraps to a new line</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
                         </div>
-                        </div>
+                        
 
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                        <div class="card p-3">
-                            <figure class="p-3 mb-0">
-                            <img src="feira1.jpg" width="280" height="280" focusable="false"></img>
-                            <figcaption class="blockquote-footer mb-0 text-muted">
-                                Local: <cite title="Source Title">Feira de ciências E.E.C.I.R</cite>
-                            </figcaption>
-                            </figure>
-                        </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                        <div class="card">
-
-                            <img src="feira3.jpg" width="" height="200" focusable="false"></img>
-
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
                         </div>
 
                         <hr class="featurette-divider"/>
-                        <div>
-                            <p> Organizamos a feira de ciências, na   Escola Estadual  Coronel Idalino Ribeiro ( E.E.C.I. R), em Salinas. Primeiramente fizemos uma apresentação dos aparatos construido no projeto de robótica e levamos sugestões de outros,
-                                que poderiam ser desenvolvidos pelos alunos para serem apresentados na   feira de ciências. Após, organizamos, orientamos e acompanhamos os   trabalhos de 30 alunos do ensino médio, durante um mês , com dois encontros semanais presenciais e acompanhamento virtual  através de um grupo whatsapp.  A saber:  construção dos aparatos, preparação e gravação de  vídeos explicativos, e   apresentação  dos trabalhos em um evento presencial. 
-                            </p>
-                        </div> 
-                    </div>
+
+                        <div  className="row featurette">
+                        <div className="col-md-7">
+                            <h2 className="featurette-heading">{data.response.servQuatroTitulo} <span class="text-muted">{data.response.servQuatroSubtitulo}</span></h2>
+                            <p className="lead">{data.response.servQuatroDescricao}</p>
+                        </div>
+                        <div className="col-md-5">
+                            <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="equipeRobo.jpg" width="500" height="500" focusable="false"></img>
+                        </div>
+                        </div>
+
+                                  
+
                 </Container>
+               
             </Jumbotron>
 
-            <Jumbotron fluid className='eventos_'>
-                
-                <style>{`.eventos_{
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                        background-color: #DAA520;
-                        color: #fff;
-                        margin-bottom: 0rem !important;
-                }`}</style>
-
-                <Container>
-                    <div className='text-center'>
-                        <h3 className='display-4'>Visita Técnica</h3>
-                    </div>
-                    <hr class="featurette-divider"/>
-                    <div class="row" data-masonry='{"percentPosition": true }'>
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="viagem01.jpg" width="345" height="212" focusable="false"></img>
-
-                            <div class="card-body">
-                            <h5 class="card-title">Card title that wraps to a new line</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                        <div class="card p-3">
-                            <figure class="p-3 mb-0">
-                            <img src="viagem02.jpeg" width="280" height="280" focusable="false"></img>
-                            <figcaption class="blockquote-footer mb-0 text-muted">
-                                Local: <cite title="Source Title">Feira de ciências E.E.C.I.R</cite>
-                            </figcaption>
-                            </figure>
-                        </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                        <div class="card">
-
-                            <img src="viagem03.jpeg" width="" height="200" focusable="false"></img>
-
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        </div>
-
-                        <hr class="featurette-divider"/>
-                        <div>
-                            <p> Organizamos a feira de ciências, na   Escola Estadual  Coronel Idalino Ribeiro ( E.E.C.I. R), em Salinas. Primeiramente fizemos uma apresentação dos aparatos construido no projeto de robótica e levamos sugestões de outros,
-                                que poderiam ser desenvolvidos pelos alunos para serem apresentados na   feira de ciências. Após, organizamos, orientamos e acompanhamos os   trabalhos de 30 alunos do ensino médio, durante um mês , com dois encontros semanais presenciais e acompanhamento virtual  através de um grupo whatsapp.  A saber:  construção dos aparatos, preparação e gravação de  vídeos explicativos, e   apresentação  dos trabalhos em um evento presencial. 
-                            </p>
-                        </div> 
-                    </div>
-                </Container>
-            </Jumbotron>
-
-
-            
         </div>
     );
-}
 
-export default Eventos
+    Home.getInitialProps = async () => {
+       var response = await axios.get('http://localhost:8010/home');
+
+       console.log(response.data);
+
+       return {response: response.data}
+    }
+
+export default Home;

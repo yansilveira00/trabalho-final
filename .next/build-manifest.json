@@ -31,33 +31,12 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/equipe": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/chunks/pages/equipe.js"
-    ],
     "/eventos": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/chunks/pages/eventos.js"
-    ],
-    "/projetos": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/chunks/pages/projetos.js"
-    ],
-    "/quemsomos": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/chunks/pages/quemsomos.js"
     ]
   },
   "ampFirstPages": []

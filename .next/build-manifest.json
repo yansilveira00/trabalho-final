@@ -11,32 +11,44 @@
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/development/_ssgManifest.js",
+    "static/development/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
-      "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
+      "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
     "/_app": [
-      "static/chunks/main.js",
       "static/chunks/webpack.js",
+      "static/chunks/main.js",
       "static/chunks/pages/_app.js"
     ],
     "/_error": [
-      "static/chunks/main.js",
       "static/chunks/webpack.js",
+      "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/eventos": [
-      "static/chunks/main.js",
+    "/equipe": [
       "static/chunks/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/equipe.js"
+    ],
+    "/eventos": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
       "static/chunks/pages/eventos.js"
+    ],
+    "/projetos": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/projetos.js"
+    ],
+    "/quemsomos": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/quemsomos.js"
     ]
   },
   "ampFirstPages": []

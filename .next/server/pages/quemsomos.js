@@ -1,265 +1,25 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = require('../ssr-module-cache.js');
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		var threw = true;
-/******/ 		try {
-/******/ 			modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 			threw = false;
-/******/ 		} finally {
-/******/ 			if(threw) delete installedModules[moduleId];
-/******/ 		}
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/quemsomos.js");
-/******/ })
-/************************************************************************/
-/******/ ({
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/quemsomos";
+exports.ids = ["pages/quemsomos"];
+exports.modules = {
 
 /***/ "./components/Menu.js":
 /*!****************************!*\
   !*** ./components/Menu.js ***!
   \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\rocka\\OneDrive\\Documentos\\GitHub\\trabalho-final\\components\\Menu.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const Menu = () => {
-  const {
-    0: isOpen,
-    1: setIsOpen
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  return __jsx("div", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"], {
-    color: "dark",
-    dark: true,
-    expand: "md",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 13
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavbarBrand"], {
-    href: "/",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 17
-    }
-  }, "WallBotz \uD83E\uDD16"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavbarToggler"], {
-    onClick: toggle,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 17
-    }
-  }), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Collapse"], {
-    isOpen: isOpen,
-    navbar: true,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 17
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
-    className: "mr-auto",
-    navbar: true,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 21
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 25
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-    href: "/",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 29
-    }
-  }, "In\xEDcio")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 25
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-    href: "/projetos",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 29
-    }
-  }, "Projeto")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 25
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-    href: "/eventos",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34,
-      columnNumber: 29
-    }
-  }, "Eventos")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 25
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-    href: "/equipe",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 29
-    }
-  }, "Equipe")), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavItem"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 25
-    }
-  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-    href: "/quemsomos",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 29
-    }
-  }, "Quem Somos"))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Menu);
-
-/***/ }),
-
-/***/ "./node_modules/bootstrap/dist/css/bootstrap.min.css":
-/*!***********************************************************!*\
-  !*** ./node_modules/bootstrap/dist/css/bootstrap.min.css ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ \"reactstrap\");\n/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst Menu = ()=>{\n    const { 0: isOpen , 1: setIsOpen  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const toggle = ()=>setIsOpen(!isOpen)\n    ;\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.Navbar, {\n            color: \"dark\",\n            dark: true,\n            expand: \"md\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavbarBrand, {\n                    href: \"/\",\n                    children: \"WallBotz \\uD83E\\uDD16\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                    lineNumber: 20,\n                    columnNumber: 17\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavbarToggler, {\n                    onClick: toggle\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                    lineNumber: 21,\n                    columnNumber: 17\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.Collapse, {\n                    isOpen: isOpen,\n                    navbar: true,\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.Nav, {\n                        className: \"mr-auto\",\n                        navbar: true,\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavItem, {\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavLink, {\n                                    href: \"/\",\n                                    children: \"In\\xedcio\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                    lineNumber: 26,\n                                    columnNumber: 29\n                                }, undefined)\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                lineNumber: 25,\n                                columnNumber: 25\n                            }, undefined),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavItem, {\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavLink, {\n                                    href: \"/projetos\",\n                                    children: \"Projeto\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                    lineNumber: 30,\n                                    columnNumber: 29\n                                }, undefined)\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                lineNumber: 29,\n                                columnNumber: 25\n                            }, undefined),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavItem, {\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavLink, {\n                                    href: \"/eventos\",\n                                    children: \"Eventos\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                    lineNumber: 34,\n                                    columnNumber: 29\n                                }, undefined)\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                lineNumber: 33,\n                                columnNumber: 25\n                            }, undefined),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavItem, {\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavLink, {\n                                    href: \"/equipe\",\n                                    children: \"Equipe\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                    lineNumber: 38,\n                                    columnNumber: 29\n                                }, undefined)\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                lineNumber: 37,\n                                columnNumber: 25\n                            }, undefined),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavItem, {\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_2__.NavLink, {\n                                    href: \"/quemsomos\",\n                                    children: \"Quem Somos\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                    lineNumber: 42,\n                                    columnNumber: 29\n                                }, undefined)\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                                lineNumber: 41,\n                                columnNumber: 25\n                            }, undefined)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                        lineNumber: 23,\n                        columnNumber: 21\n                    }, undefined)\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n                    lineNumber: 22,\n                    columnNumber: 17\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n            lineNumber: 19,\n            columnNumber: 13\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\components\\\\Menu.js\",\n        lineNumber: 18,\n        columnNumber: 9\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Menu);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL01lbnUuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBO0FBQXdDO0FBU3BCO0FBRXBCLE1BQU1TLElBQUksR0FBRyxJQUFNO0lBQ2YsTUFBTSxFQVpWLEdBWVdDLE1BQU0sR0FaakIsR0FZbUJDLFNBQVMsTUFBSVYsK0NBQVEsQ0FBQyxLQUFLLENBQUM7SUFFM0MsTUFBTVcsTUFBTSxHQUFHLElBQU1ELFNBQVMsQ0FBQyxDQUFDRCxNQUFNLENBQUM7SUFBQztJQUV4QyxxQkFDSSw4REFBQ0csS0FBRztrQkFDQSw0RUFBQ1YsOENBQU07WUFBQ1csS0FBSyxFQUFDLE1BQU07WUFBQ0MsSUFBSTtZQUFDQyxNQUFNLEVBQUMsSUFBSTs7OEJBQ2pDLDhEQUFDWCxtREFBVztvQkFBQ1ksSUFBSSxFQUFDLEdBQUc7OEJBQUMsdUJBQVU7Ozs7OzZCQUFpQjs4QkFDOUMsOERBQUZiLHFEQUFhO29CQUFDYyxPQUFPLEVBQUVOLE1BQU07Ozs7OzZCQUFJOzhCQUNsQyw4REFBQ1YsZ0RBQVE7b0JBQUNRLE1BQU0sRUFBRUEsTUFBTTtvQkFBRVMsTUFBTTs4QkFDNUIsNEVBQUNiLDJDQUFHO3dCQUFDYyxTQUFTLEVBQUMsU0FBUzt3QkFBQ0QsTUFBTTs7MENBRTNCLDhEQUFDWiwrQ0FBTzswQ0FDSiw0RUFBQ0MsK0NBQU87b0NBQUNTLElBQUksRUFBQyxHQUFHOzhDQUFDLFdBQU07Ozs7OzZDQUFVOzs7Ozt5Q0FDNUI7MENBRVYsOERBQUNWLCtDQUFPOzBDQUNKLDRFQUFDQywrQ0FBTztvQ0FBQ1MsSUFBSSxFQUFDLFdBQVc7OENBQUMsU0FBTzs7Ozs7NkNBQVU7Ozs7O3lDQUNyQzswQ0FFViw4REFBQ1YsK0NBQU87MENBQ0osNEVBQUNDLCtDQUFPO29DQUFDUyxJQUFJLEVBQUMsVUFBVTs4Q0FBQyxTQUFPOzs7Ozs2Q0FBVTs7Ozs7eUNBQ3BDOzBDQUVWLDhEQUFDViwrQ0FBTzswQ0FDSiw0RUFBQ0MsK0NBQU87b0NBQUNTLElBQUksRUFBQyxTQUFTOzhDQUFDLFFBQU07Ozs7OzZDQUFVOzs7Ozt5Q0FDbEM7MENBRVYsOERBQUNWLCtDQUFPOzBDQUNKLDRFQUFDQywrQ0FBTztvQ0FBQ1MsSUFBSSxFQUFDLFlBQVk7OENBQUMsWUFBVTs7Ozs7NkNBQVU7Ozs7O3lDQUN6Qzs7Ozs7O2lDQUNSOzs7Ozs2QkFDQzs7Ozs7O3FCQUNOOzs7OztpQkFDUCxDQUNSO0NBQ0w7QUFFRCxpRUFBZVIsSUFBSSIsInNvdXJjZXMiOlsid2VicGFjazovL3Byb2pldG8tcm9ib3RpY2EvLi9jb21wb25lbnRzL01lbnUuanM/MDZmYiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7XHJcbiAgICBDb2xsYXBzZSxcclxuICAgIE5hdmJhcixcclxuICAgIE5hdmJhclRvZ2dsZXIsXHJcbiAgICBOYXZiYXJCcmFuZCxcclxuICAgIE5hdixcclxuICAgIE5hdkl0ZW0sXHJcbiAgICBOYXZMaW5rLFxyXG59IGZyb20gJ3JlYWN0c3RyYXAnO1xyXG5cclxuY29uc3QgTWVudSA9ICgpID0+IHtcclxuICAgIGNvbnN0IFtpc09wZW4sIHNldElzT3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7XHJcblxyXG4gICAgY29uc3QgdG9nZ2xlID0gKCkgPT4gc2V0SXNPcGVuKCFpc09wZW4pO1xyXG5cclxuICAgIHJldHVybiAoXHJcbiAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgPE5hdmJhciBjb2xvcj1cImRhcmtcIiBkYXJrIGV4cGFuZD1cIm1kXCI+XHJcbiAgICAgICAgICAgICAgICA8TmF2YmFyQnJhbmQgaHJlZj1cIi9cIj5XYWxsQm90eiDwn6SWPC9OYXZiYXJCcmFuZD5cclxuICAgICAgICAgICAgICAgIDxOYXZiYXJUb2dnbGVyIG9uQ2xpY2s9e3RvZ2dsZX0gLz5cclxuICAgICAgICAgICAgICAgIDxDb2xsYXBzZSBpc09wZW49e2lzT3Blbn0gbmF2YmFyPlxyXG4gICAgICAgICAgICAgICAgICAgIDxOYXYgY2xhc3NOYW1lPVwibXItYXV0b1wiIG5hdmJhcj5cclxuXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZJdGVtPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPE5hdkxpbmsgaHJlZj1cIi9cIj5JbsOtY2lvPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L05hdkl0ZW0+XHJcblxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8TmF2SXRlbT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZMaW5rIGhyZWY9XCIvcHJvamV0b3NcIj5Qcm9qZXRvPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L05hdkl0ZW0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8TmF2SXRlbT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZMaW5rIGhyZWY9XCIvZXZlbnRvc1wiPkV2ZW50b3M8L05hdkxpbms+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvTmF2SXRlbT5cclxuXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZJdGVtPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPE5hdkxpbmsgaHJlZj1cIi9lcXVpcGVcIj5FcXVpcGU8L05hdkxpbms+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvTmF2SXRlbT5cclxuXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZJdGVtPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPE5hdkxpbmsgaHJlZj1cIi9xdWVtc29tb3NcIj5RdWVtIFNvbW9zPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L05hdkl0ZW0+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9OYXY+XHJcbiAgICAgICAgICAgICAgICA8L0NvbGxhcHNlPlxyXG4gICAgICAgICAgICA8L05hdmJhcj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IE1lbnUiXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VTdGF0ZSIsIkNvbGxhcHNlIiwiTmF2YmFyIiwiTmF2YmFyVG9nZ2xlciIsIk5hdmJhckJyYW5kIiwiTmF2IiwiTmF2SXRlbSIsIk5hdkxpbmsiLCJNZW51IiwiaXNPcGVuIiwic2V0SXNPcGVuIiwidG9nZ2xlIiwiZGl2IiwiY29sb3IiLCJkYXJrIiwiZXhwYW5kIiwiaHJlZiIsIm9uQ2xpY2siLCJuYXZiYXIiLCJjbGFzc05hbWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/Menu.js\n");
 
 /***/ }),
 
@@ -267,615 +27,31 @@ const Menu = () => {
 /*!****************************!*\
   !*** ./pages/quemsomos.js ***!
   \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Menu */ "./components/Menu.js");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\rocka\\OneDrive\\Documentos\\GitHub\\trabalho-final\\pages\\quemsomos.js";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Menu */ \"./components/Menu.js\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ \"reactstrap\");\n/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\nfunction QuemSomos() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_2___default()), {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                    children: \"Quem Somos - WallBotz\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                    lineNumber: 12,\n                    columnNumber: 17\n                }, this)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                lineNumber: 11,\n                columnNumber: 17\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {}, void 0, false, {\n                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                lineNumber: 14,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__.Jumbotron, {\n                fluid: true,\n                className: \"sobre\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"style\", {\n                        children: `.sobre{\r\n                        padding-top: 80px;\r\n                        padding-bottom: 80px;\r\n                        background-color: #DAA520;\r\n                        color: #fff;\r\n                        margin-bottom: 0rem !important;\r\n                }`\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                        lineNumber: 16,\n                        columnNumber: 13\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__.Container, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            className: \"text-center\",\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                                className: \"display-4\",\n                                children: \"Sobre a Rob\\xf3tica\"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                lineNumber: 26,\n                                columnNumber: 25\n                            }, this)\n                        }, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                            lineNumber: 25,\n                            columnNumber: 21\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                        lineNumber: 24,\n                        columnNumber: 17\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                lineNumber: 15,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__.Jumbotron, {\n                fluid: true,\n                className: \"head-sobre\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"style\", {\n                        children: `.head-sobre{\r\n                        padding-top: 80px;\r\n                        padding-bottom: 80px;\r\n                        background-color: #DAA520;\r\n                        color: #fff;\r\n                        margin-bottom: 0rem !important;\r\n                    }\r\n                    .featurette-divider {\r\n                        margin: 5rem 0; \r\n                      }\r\n                }`\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                        lineNumber: 34,\n                        columnNumber: 13\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__.Container, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            class: \"col-md-8\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                                    class: \"pb-4 mb-4 fst-italic border-bottom\",\n                                    children: \"O Come\\xe7o de Tudo\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                    lineNumber: 49,\n                                    columnNumber: 25\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"article\", {\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                            children: \"Os alunos do Instituto Federal do Norte de Minas Gerais, \\xc2ngella e Wellison, munidos pela vontade de criar um projeto de extens\\xe3o voltado para a rob\\xf3tica, buscaram um(a) coordenador(a) para o mesmo, encontrando a Docente Maria da Penha, juntos criaram o projeto.\"\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 54,\n                                            columnNumber: 29\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"hr\", {}, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 55,\n                                            columnNumber: 29\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                            children: \"\\xc2ngella era da Licenciatura em F\\xedsica, Wellison era do Curso Tecnico em Inform\\xe1tica e Maria da Penha, Docente da Area de F\\xedsica\"\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 56,\n                                            columnNumber: 29\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                                            children: \"Objetivo\"\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 57,\n                                            columnNumber: 29\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                            children: \"Com objetivo de instigar os alunos ao estudo de conceitos f\\xedsicos, os presentes acad\\xeamicos do curso de licenciatura do IFNMG- Campus Salinas, desenvolveram rob\\xf4s visando propiciar um ambiente estimulante e favor\\xe1vel ao ensino de f\\xedsica. O projeto foi coordenado pela professora de f\\xedsica, Maria da Penha, em 2020.\"\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 58,\n                                            columnNumber: 29\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                                            children: \"Aplica\\xe7\\xe3o\"\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 59,\n                                            columnNumber: 29\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                            children: \"Visando utilizar ferramentas que agu\\xe7am a investiga\\xe7\\xe3o cient\\xedfica, fomentou o desenvolvimento de rob\\xf4s para serem utilizados de maneira pr\\xe1tica no ensino/aprendizagem de f\\xedsica. Os aparatos s\\xe3o utilizados para demonstrar os conceitos de maneira aplic\\xe1vel, e para isso utilizam-se todas as etapas da montagem dos rob\\xf4s e tamb\\xe9m seu funcionamento. No in\\xedcio dos trabalhos, os discentes elaboram projetos, visando utiliz\\xe1-los para ensinar um t\\xf3pico de f\\xedsica no ensino m\\xe9dio.\"\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 60,\n                                            columnNumber: 29\n                                        }, this)\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                    lineNumber: 53,\n                                    columnNumber: 25\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                            lineNumber: 48,\n                            columnNumber: 25\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                        lineNumber: 46,\n                        columnNumber: 17\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                lineNumber: 33,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__.Jumbotron, {\n                fluid: true,\n                className: \"zz\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"style\", {\n                        children: `.zz{\r\n                        padding-top: 80px;\r\n                        padding-bottom: 80px;\r\n                        background-color: #363636;\r\n                        color: #fff;\r\n                        margin-bottom: 0rem !important;\r\n\r\n                }\r\n                .circulo{\r\n                    width: 140px;\r\n                    height: 140px;\r\n                    background-color: blue;\r\n                    font-size: 52px;\r\n                    padding-top: 24px;\r\n\r\n                }\r\n\r\n                .ang, .penha, .welisom{\r\n                    width= 100px;\r\n                    height= 100px;\r\n                    font-size= 40px; \r\n                    padding-top= 20px; \r\n                }\r\n                .centralizar{\r\n                    margin: 0 auto !important;\r\n                    float: none !important;\r\n                }\r\n                .featurette-divider {\r\n                    margin: 5rem 0; \r\n                  }\r\n\r\n                }`\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                        lineNumber: 70,\n                        columnNumber: 13\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(reactstrap__WEBPACK_IMPORTED_MODULE_4__.Container, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            \"background-color\": \"black\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    class: \"content\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                    lineNumber: 104,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"footer\", {\n                                    id: \"myFooter\",\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                            class: \"container\",\n                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                class: \"row\",\n                                                children: [\n                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                        class: \"col-sm-3\",\n                                                        children: [\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                                                children: \"Inicio\"\n                                                            }, void 0, false, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 110,\n                                                                columnNumber: 29\n                                                            }, this),\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ul\", {\n                                                                children: [\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"http://localhost:3000\",\n                                                                            children: \"Inicio\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 112,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 112,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"http://localhost:3000/projetos\",\n                                                                            children: \"Projetos\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 113,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 113,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"http://localhost:3000/eventos\",\n                                                                            children: \"Eventos\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 114,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 114,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"http://localhost:3000/equipe\",\n                                                                            children: \"Membros\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 115,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 115,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"http://localhost:3000/quemsomos\",\n                                                                            children: \"Quem somos\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 116,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 116,\n                                                                        columnNumber: 33\n                                                                    }, this)\n                                                                ]\n                                                            }, void 0, true, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 111,\n                                                                columnNumber: 29\n                                                            }, this)\n                                                        ]\n                                                    }, void 0, true, {\n                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                        lineNumber: 109,\n                                                        columnNumber: 25\n                                                    }, this),\n                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                        class: \"col-sm-3\",\n                                                        children: [\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                                                children: \"Sobre n\\xf3s\"\n                                                            }, void 0, false, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 121,\n                                                                columnNumber: 29\n                                                            }, this),\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ul\", {\n                                                                children: [\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"\",\n                                                                            children: \"Informa\\xe7\\xf5es da Rob\\xf3tica\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 123,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 123,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"https://www.instagram.com/idalino.ribeiro/\",\n                                                                            children: \"Feira de Ci\\xeancias\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 124,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 124,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"https://youtube.com/channel/UCSwOcTeWCmZArzMXBPfYc1A\",\n                                                                            children: \"YouTube\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 125,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 125,\n                                                                        columnNumber: 33\n                                                                    }, this)\n                                                                ]\n                                                            }, void 0, true, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 122,\n                                                                columnNumber: 29\n                                                            }, this)\n                                                        ]\n                                                    }, void 0, true, {\n                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                        lineNumber: 120,\n                                                        columnNumber: 25\n                                                    }, this),\n                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                        class: \"col-sm-3\",\n                                                        children: [\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                                                children: \"Suporte\"\n                                                            }, void 0, false, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 129,\n                                                                columnNumber: 29\n                                                            }, this),\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ul\", {\n                                                                children: [\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"https://www.instagram.com/wallbotz/\",\n                                                                            children: \"FAQ\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 131,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 131,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"https://www.instagram.com/wallbotz/\",\n                                                                            children: \"Telefones\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 132,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 132,\n                                                                        columnNumber: 33\n                                                                    }, this),\n                                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                                            href: \"https://www.instagram.com/wallbotz/\",\n                                                                            children: \"Chat\"\n                                                                        }, void 0, false, {\n                                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                            lineNumber: 133,\n                                                                            columnNumber: 37\n                                                                        }, this)\n                                                                    }, void 0, false, {\n                                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                        lineNumber: 133,\n                                                                        columnNumber: 33\n                                                                    }, this)\n                                                                ]\n                                                            }, void 0, true, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 130,\n                                                                columnNumber: 29\n                                                            }, this)\n                                                        ]\n                                                    }, void 0, true, {\n                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                        lineNumber: 128,\n                                                        columnNumber: 25\n                                                    }, this),\n                                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                        class: \"col-sm-3 info\",\n                                                        children: [\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h5\", {\n                                                                children: \"Informa\\xe7\\xf5es\"\n                                                            }, void 0, false, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 137,\n                                                                columnNumber: 29\n                                                            }, this),\n                                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                                                children: \" Entre em contato em caso de bug. \"\n                                                            }, void 0, false, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 138,\n                                                                columnNumber: 29\n                                                            }, this)\n                                                        ]\n                                                    }, void 0, true, {\n                                                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                        lineNumber: 136,\n                                                        columnNumber: 25\n                                                    }, this)\n                                                ]\n                                            }, void 0, true, {\n                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                lineNumber: 108,\n                                                columnNumber: 21\n                                            }, this)\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 107,\n                                            columnNumber: 17\n                                        }, this),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                            class: \"second-bar\",\n                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                class: \"container\",\n                                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                    class: \"social-icons\",\n                                                    children: [\n                                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                            href: \"https://youtube.com/channel/UCSwOcTeWCmZArzMXBPfYc1A\",\n                                                            class: \"YouTube\",\n                                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                                                class: \"fa fa-facebook\"\n                                                            }, void 0, false, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 146,\n                                                                columnNumber: 108\n                                                            }, this)\n                                                        }, void 0, false, {\n                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                            lineNumber: 146,\n                                                            columnNumber: 29\n                                                        }, this),\n                                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                                            href: \"https://www.instagram.com/wallbotz/\",\n                                                            class: \"instagram\",\n                                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                                                                class: \"fa fa-instagram\"\n                                                            }, void 0, false, {\n                                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                                lineNumber: 147,\n                                                                columnNumber: 93\n                                                            }, this)\n                                                        }, void 0, false, {\n                                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                            lineNumber: 147,\n                                                            columnNumber: 29\n                                                        }, this)\n                                                    ]\n                                                }, void 0, true, {\n                                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                    lineNumber: 145,\n                                                    columnNumber: 25\n                                                }, this)\n                                            }, void 0, false, {\n                                                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                                lineNumber: 143,\n                                                columnNumber: 20\n                                            }, this)\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                            lineNumber: 142,\n                                            columnNumber: 17\n                                        }, this)\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                    lineNumber: 106,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"script\", {\n                                    src: \"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                    lineNumber: 152,\n                                    columnNumber: 13\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"script\", {\n                                    src: \"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                                    lineNumber: 153,\n                                    columnNumber: 13\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                            lineNumber: 103,\n                            columnNumber: 21\n                        }, this)\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                        lineNumber: 102,\n                        columnNumber: 21\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n                lineNumber: 69,\n                columnNumber: 13\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\yansi\\\\Documents\\\\BSI\\\\WEB\\\\trabalho-final\\\\pages\\\\quemsomos.js\",\n        lineNumber: 10,\n        columnNumber: 9\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuemSomos);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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c0RBQ3BCLHNCQUFDTjtnREFBSU0sS0FBSyxFQUFDLFdBQVc7MERBRWpCLHNCQUFDTjtvREFBSU0sS0FBSyxFQUFDLGNBQWM7Ozs0REFDbEJhLElBQUksRUFBQzs0REFBdURiLEtBQUssRUFBQyxTQUFTO3NFQUFDO2dFQUFHQSxLQUFLLEVBQUM7Ozs7O29FQUFxQjs7Ozs7Z0VBQUk7OzREQUM5R2EsSUFBSSxFQUFDOzREQUFzQ2IsS0FBSyxFQUFDLFdBQVc7c0VBQUM7Z0VBQUdBLEtBQUssRUFBQyxpQkFBaUI7Ozs7O29FQUFLOzs7Ozs7Ozs7Ozt3REFDN0Y7Ozs7O29EQUNKOzs7OztnREFDSjs7Ozs7O3dDQUNEOzhDQUNULFFBQUNlLFFBQU07b0NBQUNDLEdBQUcsRUFBQyxtRUFBbUU7Ozs7O3dDQUFVOzhDQUN6RixRQUFDRCxRQUFNO29DQUFDQyxHQUFHLEVBQUM7Ozs7O3dDQUE4RTs7Ozs7O2dDQUU1RTs7Ozs7NEJBR007Ozs7OztvQkFDSjs7Ozs7O1lBRWQsQ0FDUjtDQUNMO0FBRUQsZUFBZXZCLFNBQVMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wcm9qZXRvLXJvYm90aWNhLy4vcGFnZXMvcXVlbXNvbW9zLmpzPzNjNGMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IE1lbnUgZnJvbSAnLi4vY29tcG9uZW50cy9NZW51JztcclxuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcclxuXHJcbmltcG9ydCAnYm9vdHN0cmFwL2Rpc3QvY3NzL2Jvb3RzdHJhcC5taW4uY3NzJztcclxuXHJcbmltcG9ydCB7SnVtYm90cm9uLCBDb250YWluZXJ9IGZyb20gJ3JlYWN0c3RyYXAnO1xyXG5cclxuZnVuY3Rpb24gUXVlbVNvbW9zKCkge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICAgICAgPEhlYWQ+XHJcbiAgICAgICAgICAgICAgICA8dGl0bGU+UXVlbSBTb21vcyAtIFdhbGxCb3R6PC90aXRsZT5cclxuICAgICAgICAgICAgICAgIDwvSGVhZD5cclxuICAgICAgICAgICAgPE1lbnUgLz5cclxuICAgICAgICAgICAgPEp1bWJvdHJvbiBmbHVpZCBjbGFzc05hbWU9XCJzb2JyZVwiPlxyXG4gICAgICAgICAgICA8c3R5bGU+e2Auc29icmV7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctdG9wOiA4MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogODBweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0RBQTUyMDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDByZW0gIWltcG9ydGFudDtcclxuICAgICAgICAgICAgICAgIH1gfTwvc3R5bGU+XHJcblxyXG4gICAgICAgICAgICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtY2VudGVyXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9J2Rpc3BsYXktNCc+U29icmUgYSBSb2LDs3RpY2E8L2gxPlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG5cclxuXHJcbiAgICAgICAgICAgICAgICA8L0NvbnRhaW5lcj5cclxuICAgICAgICAgICAgPC9KdW1ib3Ryb24+XHJcblxyXG4gICAgICAgICAgICA8SnVtYm90cm9uIGZsdWlkIGNsYXNzTmFtZT1cImhlYWQtc29icmVcIj5cclxuICAgICAgICAgICAgPHN0eWxlPntgLmhlYWQtc29icmV7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctdG9wOiA4MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogODBweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0RBQTUyMDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDByZW0gIWltcG9ydGFudDtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLmZlYXR1cmV0dGUtZGl2aWRlciB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1hcmdpbjogNXJlbSAwOyBcclxuICAgICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIH1gfTwvc3R5bGU+XHJcblxyXG4gICAgICAgICAgICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC1tZC04XCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzcz1cInBiLTQgbWItNCBmc3QtaXRhbGljIGJvcmRlci1ib3R0b21cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIE8gQ29tZcOnbyBkZSBUdWRvXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvaDM+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8YXJ0aWNsZT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwPk9zIGFsdW5vcyBkbyBJbnN0aXR1dG8gRmVkZXJhbCBkbyBOb3J0ZSBkZSBNaW5hcyBHZXJhaXMsIMOCbmdlbGxhIGUgV2VsbGlzb24sIG11bmlkb3MgcGVsYSB2b250YWRlIGRlIGNyaWFyIHVtIHByb2pldG8gZGUgZXh0ZW5zw6NvIHZvbHRhZG8gcGFyYSBhIHJvYsOzdGljYSwgYnVzY2FyYW0gdW0oYSkgY29vcmRlbmFkb3IoYSkgcGFyYSBvIG1lc21vLCBlbmNvbnRyYW5kbyBhIERvY2VudGUgTWFyaWEgZGEgUGVuaGEsIGp1bnRvcyBjcmlhcmFtIG8gcHJvamV0by48L3A+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aHIvPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHA+w4JuZ2VsbGEgZXJhIGRhIExpY2VuY2lhdHVyYSBlbSBGw61zaWNhLCBXZWxsaXNvbiBlcmEgZG8gQ3Vyc28gVGVjbmljbyBlbSBJbmZvcm3DoXRpY2EgZSBNYXJpYSBkYSBQZW5oYSwgRG9jZW50ZSBkYSBBcmVhIGRlIEbDrXNpY2E8L3A+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDI+T2JqZXRpdm88L2gyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHA+Q29tIG9iamV0aXZvIGRlIGluc3RpZ2FyIG9zIGFsdW5vcyBhbyBlc3R1ZG8gZGUgY29uY2VpdG9zIGbDrXNpY29zLCBvcyBwcmVzZW50ZXMgYWNhZMOqbWljb3MgZG8gY3Vyc28gZGUgbGljZW5jaWF0dXJhIGRvIElGTk1HLSBDYW1wdXMgU2FsaW5hcywgZGVzZW52b2x2ZXJhbSByb2LDtHMgdmlzYW5kbyBwcm9waWNpYXIgdW0gYW1iaWVudGUgZXN0aW11bGFudGUgZSBmYXZvcsOhdmVsIGFvIGVuc2lubyBkZSBmw61zaWNhLiBPIHByb2pldG8gZm9pIGNvb3JkZW5hZG8gcGVsYSBwcm9mZXNzb3JhIGRlIGbDrXNpY2EsIE1hcmlhIGRhIFBlbmhhLCBlbSAyMDIwLjwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMz5BcGxpY2HDp8OjbzwvaDM+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cD5WaXNhbmRvIHV0aWxpemFyIGZlcnJhbWVudGFzIHF1ZSBhZ3XDp2FtIGEgaW52ZXN0aWdhw6fDo28gY2llbnTDrWZpY2EsIGZvbWVudG91IG8gZGVzZW52b2x2aW1lbnRvIGRlIHJvYsO0cyBwYXJhIHNlcmVtIHV0aWxpemFkb3MgZGUgbWFuZWlyYSBwcsOhdGljYSBubyBlbnNpbm8vYXByZW5kaXphZ2VtIGRlIGbDrXNpY2EuIE9zIGFwYXJhdG9zIHPDo28gdXRpbGl6YWRvcyBwYXJhIGRlbW9uc3RyYXIgb3MgY29uY2VpdG9zIGRlIG1hbmVpcmEgYXBsaWPDoXZlbCwgZSBwYXJhIGlzc28gdXRpbGl6YW0tc2UgdG9kYXMgYXMgZXRhcGFzIGRhIG1vbnRhZ2VtIGRvcyByb2LDtHMgZSB0YW1iw6ltIHNldSBmdW5jaW9uYW1lbnRvLiBObyBpbsOtY2lvIGRvcyB0cmFiYWxob3MsIG9zIGRpc2NlbnRlcyBlbGFib3JhbSBwcm9qZXRvcywgdmlzYW5kbyB1dGlsaXrDoS1sb3MgcGFyYSBlbnNpbmFyIHVtIHTDs3BpY28gZGUgZsOtc2ljYSBubyBlbnNpbm8gbcOpZGlvLjwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2FydGljbGU+XHJcblxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4gICBcclxuXHJcbiAgICAgICAgICAgICAgICA8L0NvbnRhaW5lcj5cclxuICAgICAgICAgICAgPC9KdW1ib3Ryb24+XHJcblxyXG4gICAgICAgICAgICA8SnVtYm90cm9uIGZsdWlkIGNsYXNzTmFtZT1cInp6XCI+XHJcbiAgICAgICAgICAgIDxzdHlsZT57YC56entcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy10b3A6IDgwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctYm90dG9tOiA4MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzYzNjM2O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZmZjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMHJlbSAhaW1wb3J0YW50O1xyXG5cclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5jaXJjdWxve1xyXG4gICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxNDBweDtcclxuICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDE0MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XHJcbiAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiA1MnB4O1xyXG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmctdG9wOiAyNHB4O1xyXG5cclxuICAgICAgICAgICAgICAgIH1cclxuXHJcbiAgICAgICAgICAgICAgICAuYW5nLCAucGVuaGEsIC53ZWxpc29te1xyXG4gICAgICAgICAgICAgICAgICAgIHdpZHRoPSAxMDBweDtcclxuICAgICAgICAgICAgICAgICAgICBoZWlnaHQ9IDEwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIGZvbnQtc2l6ZT0gNDBweDsgXHJcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZy10b3A9IDIwcHg7IFxyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLmNlbnRyYWxpemFye1xyXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbjogMCBhdXRvICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgICAgICAgICAgZmxvYXQ6IG5vbmUgIWltcG9ydGFudDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIC5mZWF0dXJldHRlLWRpdmlkZXIge1xyXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbjogNXJlbSAwOyBcclxuICAgICAgICAgICAgICAgICAgfVxyXG5cclxuICAgICAgICAgICAgICAgIH1gfTwvc3R5bGU+XHJcbiAgICAgICAgICAgICAgICAgICAgPENvbnRhaW5lcj5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGJhY2tncm91bmQtY29sb3I9J2JsYWNrJz5cclxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRlbnRcIj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPGZvb3RlciBpZD1cIm15Rm9vdGVyXCI+XHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInJvd1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLXNtLTNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNT5JbmljaW88L2g1PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVsPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSdodHRwOi8vbG9jYWxob3N0OjMwMDAnPkluaWNpbzwvYT48L2xpPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSdodHRwOi8vbG9jYWxob3N0OjMwMDAvcHJvamV0b3MnPlByb2pldG9zPC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9J2h0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9ldmVudG9zJz5FdmVudG9zPC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9J2h0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9lcXVpcGUnPk1lbWJyb3M8L2E+PC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0naHR0cDovL2xvY2FsaG9zdDozMDAwL3F1ZW1zb21vcyc+UXVlbSBzb21vczwvYT48L2xpPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC91bD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtc20tM1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg1PlNvYnJlIG7Ds3M8L2g1PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVsPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPVwiXCI+SW5mb3JtYcOnw7VlcyBkYSBSb2LDs3RpY2E8L2E+PC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj1cImh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vaWRhbGluby5yaWJlaXJvL1wiPkZlaXJhIGRlIENpw6puY2lhczwvYT48L2xpPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPVwiaHR0cHM6Ly95b3V0dWJlLmNvbS9jaGFubmVsL1VDU3dPY1RlV0NtWkFyek1YQlBmWWMxQVwiPllvdVR1YmU8L2E+PC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLXNtLTNcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNT5TdXBvcnRlPC9oNT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1bD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj1cImh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vd2FsbGJvdHovXCI+RkFRPC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9XCJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tL3dhbGxib3R6L1wiPlRlbGVmb25lczwvYT48L2xpPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPVwiaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS93YWxsYm90ei9cIj5DaGF0PC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC1zbS0zIGluZm9cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNT5JbmZvcm1hw6fDtWVzPC9oNT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwPiBFbnRyZSBlbSBjb250YXRvIGVtIGNhc28gZGUgYnVnLiA8L3A+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic2Vjb25kLWJhclwiPlxyXG4gICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInNvY2lhbC1pY29uc1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8veW91dHViZS5jb20vY2hhbm5lbC9VQ1N3T2NUZVdDbVpBcnpNWEJQZlljMUFcIiBjbGFzcz1cIllvdVR1YmVcIj48aSBjbGFzcz1cImZhIGZhLWZhY2Vib29rXCI+PC9pPjwvYT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tL3dhbGxib3R6L1wiIGNsYXNzPVwiaW5zdGFncmFtXCI+PGkgY2xhc3M9XCJmYSBmYS1pbnN0YWdyYW1cIj48L2k+PC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8L2Zvb3Rlcj5cclxuICAgICAgICAgICAgPHNjcmlwdCBzcmM9XCJodHRwczovL2FqYXguZ29vZ2xlYXBpcy5jb20vYWpheC9saWJzL2pxdWVyeS8xLjEyLjQvanF1ZXJ5Lm1pbi5qc1wiPjwvc2NyaXB0PlxyXG4gICAgICAgICAgICA8c2NyaXB0IHNyYz1cImh0dHA6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4zLjcvanMvYm9vdHN0cmFwLm1pbi5qc1wiPjwvc2NyaXB0PlxyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuXHJcblxyXG4gICAgICAgICAgICAgICAgICAgIDwvQ29udGFpbmVyPlxyXG4gICAgICAgICAgICAgICAgPC9KdW1ib3Ryb24+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKTtcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgUXVlbVNvbW9zXHJcbiJdLCJuYW1lcyI6WyJNZW51IiwiSGVhZCIsIkp1bWJvdHJvbiIsIkNvbnRhaW5lciIsIlF1ZW1Tb21vcyIsImRpdiIsInRpdGxlIiwiZmx1aWQiLCJjbGFzc05hbWUiLCJzdHlsZSIsImgxIiwiY2xhc3MiLCJoMyIsImFydGljbGUiLCJwIiwiaHIiLCJoMiIsImJhY2tncm91bmQtY29sb3IiLCJmb290ZXIiLCJpZCIsImg1IiwidWwiLCJsaSIsImEiLCJocmVmIiwiaSIsInNjcmlwdCIsInNyYyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/quemsomos.js\n");
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/***/ }),
+
+/***/ "./node_modules/bootstrap/dist/css/bootstrap.min.css":
+/*!***********************************************************!*\
+  !*** ./node_modules/bootstrap/dist/css/bootstrap.min.css ***!
+  \***********************************************************/
+/***/ (() => {
 
 
 
+/***/ }),
 
-function QuemSomos() {
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 9
-    }
-  }, __jsx(_components_Menu__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 13
-    }
-  }), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Jumbotron"], {
-    fluid: true,
-    className: "sobre",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 13
-    }
-  }, __jsx("style", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
-    }
-  }, `.sobre{
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                        background-color: #DAA520;
-                        color: #fff;
-                        margin-bottom: 0rem !important;
-                }`), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    className: "text-center",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 21
-    }
-  }, __jsx("h1", {
-    className: "display-4",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 25
-    }
-  }, "Sobre a Rob\xF3tica")))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Jumbotron"], {
-    fluid: true,
-    className: "head-sobre",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 13
-    }
-  }, __jsx("style", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 13
-    }
-  }, `.head-sobre{
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                        background-color: #DAA520;
-                        color: #fff;
-                        margin-bottom: 0rem !important;
-                    }
-                    .featurette-divider {
-                        margin: 5rem 0; 
-                      }
-                }`), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    class: "col-md-8",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 25
-    }
-  }, __jsx("h3", {
-    class: "pb-4 mb-4 fst-italic border-bottom",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 25
-    }
-  }, "O Come\xE7o de Tudo"), __jsx("article", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 25
-    }
-  }, __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 29
-    }
-  }, "Os alunos do Instituto Federal do Norte de Minas Gerais, \xC2ngella e Wellison, munidos pela vontade de criar um projeto de extens\xE3o voltado para a rob\xF3tica, buscaram um(a) coordenador(a) para o mesmo, encontrando a Docente Maria da Penha, juntos criaram o projeto."), __jsx("hr", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 29
-    }
-  }), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 29
-    }
-  }, "\xC2ngella era da Licenciatura em F\xEDsica, Wellison era do Curso Tecnico em Inform\xE1tica e Maria da Penha, Docente da Area de F\xEDsica"), __jsx("h2", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 29
-    }
-  }, "Objetivo"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 29
-    }
-  }, "Com objetivo de instigar os alunos ao estudo de conceitos f\xEDsicos, os presentes acad\xEAmicos do curso de licenciatura do IFNMG- Campus Salinas, desenvolveram rob\xF4s visando propiciar um ambiente estimulante e favor\xE1vel ao ensino de f\xEDsica. O projeto foi coordenado pela professora de f\xEDsica, Maria da Penha, em 2020."), __jsx("h3", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 29
-    }
-  }, "Aplica\xE7\xE3o"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 29
-    }
-  }, "Visando utilizar ferramentas que agu\xE7am a investiga\xE7\xE3o cient\xEDfica, fomentou o desenvolvimento de rob\xF4s para serem utilizados de maneira pr\xE1tica no ensino/aprendizagem de f\xEDsica. Os aparatos s\xE3o utilizados para demonstrar os conceitos de maneira aplic\xE1vel, e para isso utilizam-se todas as etapas da montagem dos rob\xF4s e tamb\xE9m seu funcionamento. No in\xEDcio dos trabalhos, os discentes elaboram projetos, visando utiliz\xE1-los para ensinar um t\xF3pico de f\xEDsica no ensino m\xE9dio."))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Jumbotron"], {
-    fluid: true,
-    className: "zz",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 13
-    }
-  }, __jsx("style", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 13
-    }
-  }, `.zz{
-                        padding-top: 80px;
-                        padding-bottom: 80px;
-                        background-color: #363636;
-                        color: #fff;
-                        margin-bottom: 0rem !important;
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/***/ ((module) => {
 
-                }
-                .circulo{
-                    width: 140px;
-                    height: 140px;
-                    background-color: blue;
-                    font-size: 52px;
-                    padding-top: 24px;
-
-                }
-
-                .ang, .penha, .welisom{
-                    width= 100px;
-                    height= 100px;
-                    font-size= 40px; 
-                    padding-top= 20px; 
-                }
-                .centralizar{
-                    margin: 0 auto !important;
-                    float: none !important;
-                }
-                .featurette-divider {
-                    margin: 5rem 0; 
-                  }
-
-                }`), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Container"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 21
-    }
-  }, __jsx("div", {
-    "background-color": "black",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 21
-    }
-  }, __jsx("div", {
-    class: "content",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 13
-    }
-  }), __jsx("footer", {
-    id: "myFooter",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    class: "container",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    class: "row",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 104,
-      columnNumber: 21
-    }
-  }, __jsx("div", {
-    class: "col-sm-3",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 25
-    }
-  }, __jsx("h5", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 29
-    }
-  }, "Inicio"), __jsx("ul", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 107,
-      columnNumber: 29
-    }
-  }, __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 108,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "http://localhost:3000",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 108,
-      columnNumber: 37
-    }
-  }, "Inicio")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 109,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "http://localhost:3000/projetos",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 109,
-      columnNumber: 37
-    }
-  }, "Projetos")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "http://localhost:3000/eventos",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 37
-    }
-  }, "Eventos")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "http://localhost:3000/equipe",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 37
-    }
-  }, "Membros")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "http://localhost:3000/quemsomos",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 37
-    }
-  }, "Quem somos")))), __jsx("div", {
-    class: "col-sm-3",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 25
-    }
-  }, __jsx("h5", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117,
-      columnNumber: 29
-    }
-  }, "Sobre n\xF3s"), __jsx("ul", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 118,
-      columnNumber: 29
-    }
-  }, __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 119,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 119,
-      columnNumber: 37
-    }
-  }, "Informa\xE7\xF5es da Rob\xF3tica")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "https://www.instagram.com/idalino.ribeiro/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 37
-    }
-  }, "Feira de Ci\xEAncias")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 121,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "https://youtube.com/channel/UCSwOcTeWCmZArzMXBPfYc1A",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 121,
-      columnNumber: 37
-    }
-  }, "YouTube")))), __jsx("div", {
-    class: "col-sm-3",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 25
-    }
-  }, __jsx("h5", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 125,
-      columnNumber: 29
-    }
-  }, "Suporte"), __jsx("ul", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126,
-      columnNumber: 29
-    }
-  }, __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "https://www.instagram.com/wallbotz/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127,
-      columnNumber: 37
-    }
-  }, "FAQ")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "https://www.instagram.com/wallbotz/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128,
-      columnNumber: 37
-    }
-  }, "Telefones")), __jsx("li", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 33
-    }
-  }, __jsx("a", {
-    href: "https://www.instagram.com/wallbotz/",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 37
-    }
-  }, "Chat")))), __jsx("div", {
-    class: "col-sm-3 info",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132,
-      columnNumber: 25
-    }
-  }, __jsx("h5", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 29
-    }
-  }, "Informa\xE7\xF5es"), __jsx("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134,
-      columnNumber: 29
-    }
-  }, " Entre em contato em caso de bug. ")))), __jsx("div", {
-    class: "second-bar",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138,
-      columnNumber: 17
-    }
-  }, __jsx("div", {
-    class: "container",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 139,
-      columnNumber: 20
-    }
-  }, __jsx("div", {
-    class: "social-icons",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 141,
-      columnNumber: 25
-    }
-  }, __jsx("a", {
-    href: "https://youtube.com/channel/UCSwOcTeWCmZArzMXBPfYc1A",
-    class: "YouTube",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 142,
-      columnNumber: 29
-    }
-  }, __jsx("i", {
-    class: "fa fa-facebook",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 142,
-      columnNumber: 108
-    }
-  })), __jsx("a", {
-    href: "https://www.instagram.com/wallbotz/",
-    class: "instagram",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 29
-    }
-  }, __jsx("i", {
-    class: "fa fa-instagram",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 93
-    }
-  })))))), __jsx("script", {
-    src: "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 148,
-      columnNumber: 13
-    }
-  }), __jsx("script", {
-    src: "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 149,
-      columnNumber: 13
-    }
-  })))));
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (QuemSomos);
+"use strict";
+module.exports = require("next/head");
 
 /***/ }),
 
@@ -883,10 +59,21 @@ function QuemSomos() {
 /*!************************!*\
   !*** external "react" ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
+"use strict";
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ }),
 
@@ -894,12 +81,21 @@ module.exports = require("react");
 /*!*****************************!*\
   !*** external "reactstrap" ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
+"use strict";
 module.exports = require("reactstrap");
 
 /***/ })
 
-/******/ });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vd2VicGFjay9ib290c3RyYXAiLCJ3ZWJwYWNrOi8vLy4vY29tcG9uZW50cy9NZW51LmpzIiwid2VicGFjazovLy8uL3BhZ2VzL3F1ZW1zb21vcy5qcyIsIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdFwiIiwid2VicGFjazovLy9leHRlcm5hbCBcInJlYWN0c3RyYXBcIiJdLCJuYW1lcyI6WyJNZW51IiwiaXNPcGVuIiwic2V0SXNPcGVuIiwidXNlU3RhdGUiLCJ0b2dnbGUiLCJRdWVtU29tb3MiXSwibWFwcGluZ3MiOiI7O1FBQUE7UUFDQTs7UUFFQTtRQUNBOztRQUVBO1FBQ0E7UUFDQTtRQUNBO1FBQ0E7UUFDQTtRQUNBO1FBQ0E7UUFDQTtRQUNBOztRQUVBO1FBQ0E7UUFDQTtRQUNBO1FBQ0E7UUFDQSxJQUFJO1FBQ0o7UUFDQTs7UUFFQTtRQUNBOztRQUVBO1FBQ0E7UUFDQTs7O1FBR0E7UUFDQTs7UUFFQTtRQUNBOztRQUVBO1FBQ0E7UUFDQTtRQUNBLDBDQUEwQyxnQ0FBZ0M7UUFDMUU7UUFDQTs7UUFFQTtRQUNBO1FBQ0E7UUFDQSx3REFBd0Qsa0JBQWtCO1FBQzFFO1FBQ0EsaURBQWlELGNBQWM7UUFDL0Q7O1FBRUE7UUFDQTtRQUNBO1FBQ0E7UUFDQTtRQUNBO1FBQ0E7UUFDQTtRQUNBO1FBQ0E7UUFDQTtRQUNBLHlDQUF5QyxpQ0FBaUM7UUFDMUUsZ0hBQWdILG1CQUFtQixFQUFFO1FBQ3JJO1FBQ0E7O1FBRUE7UUFDQTtRQUNBO1FBQ0EsMkJBQTJCLDBCQUEwQixFQUFFO1FBQ3ZELGlDQUFpQyxlQUFlO1FBQ2hEO1FBQ0E7UUFDQTs7UUFFQTtRQUNBLHNEQUFzRCwrREFBK0Q7O1FBRXJIO1FBQ0E7OztRQUdBO1FBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FDeEZBO0FBQ0E7O0FBVUEsTUFBTUEsSUFBSSxHQUFHLE1BQU07QUFDZixRQUFNO0FBQUEsT0FBQ0MsTUFBRDtBQUFBLE9BQVNDO0FBQVQsTUFBc0JDLHNEQUFR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QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQURKLEVBRUk7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxLQUNJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FBSTtBQUFHLFFBQUksRUFBQyxxQ0FBUjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBQUosQ0FESixFQUVJO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FBSTtBQUFHLFFBQUksRUFBQyxxQ0FBUjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQUFKLENBRkosRUFHSTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQUk7QUFBRyxRQUFJLEVBQUMscUNBQVI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxZQUFKLENBSEosQ0FGSixDQXBCSixFQTRCSTtBQUFLLFNBQUssRUFBQyxlQUFYO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FDSTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLHlCQURKLEVBRUk7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSwwQ0FGSixDQTVCSixDQURKLENBREosRUFvQ0k7QUFBSyxTQUFLLEVBQUMsWUFBWDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0c7QUFBSyxTQUFLLEVBQUMsV0FBWDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBRUs7QUFBSyxTQUFLLEVBQUMsY0FBWDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0k7QUFBRyxRQUFJLEVBQUMsc0RBQVI7QUFBK0QsU0FBSyxFQUFDLFNBQXJFO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FBK0U7QUFBRyxTQUFLLEVBQUMsZ0JBQVQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxJQUEvRSxDQURKLEVBRUk7QUFBRyxRQUFJLEVBQUMscUNBQVI7QUFBOEMsU0FBSyxFQUFDLFdBQXBEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsS0FBZ0U7QUFBRyxTQUFLLEVBQUMsaUJBQVQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxJQUFoRSxDQUZKLENBRkwsQ0FESCxDQXBDSixDQUhRLEVBaURSO0FBQVEsT0FBRyxFQUFDLG1FQUFaO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFqRFEsRUFrRFI7QUFBUSxPQUFHLEVBQUMsb0VBQVo7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxJQWxEUSxDQURBLENBakNSLENBeERKLENBREo7QUF1Skg7O0FBRWNBLHdFQUFmLEU7Ozs7Ozs7Ozs7O0FDaEtBLGtDOzs7Ozs7Ozs7OztBQ0FBLHVDIiwiZmlsZSI6InBhZ2VzL3F1ZW1zb21vcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIiBcdC8vIFRoZSBtb2R1bGUgY2FjaGVcbiBcdHZhciBpbnN0YWxsZWRNb2R1bGVzID0gcmVxdWlyZSgnLi4vc3NyLW1vZHVsZS1jYWNoZS5qcycpO1xuXG4gXHQvLyBUaGUgcmVxdWlyZSBmdW5jdGlvblxuIFx0ZnVuY3Rpb24gX193ZWJwYWNrX3JlcXVpcmVfXyhtb2R1bGVJZCkge1xuXG4gXHRcdC8vIENoZWNrIGlmIG1vZHVsZSBpcyBpbiBjYWNoZVxuIFx0XHRpZihpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXSkge1xuIFx0XHRcdHJldHVybiBpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXS5leHBvcnRzO1xuIFx0XHR9XG4gXHRcdC8vIENyZWF0ZSBhIG5ldyBtb2R1bGUgKGFuZCBwdXQgaXQgaW50byB0aGUgY2FjaGUpXG4gXHRcdHZhciBtb2R1bGUgPSBpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXSA9IHtcbiBcdFx0XHRpOiBtb2R1bGVJZCxcbiBcdFx0XHRsOiBmYWxzZSxcbiBcdFx0XHRleHBvcnRzOiB7fVxuIFx0XHR9O1xuXG4gXHRcdC8vIEV4ZWN1dGUgdGhlIG1vZHVsZSBmdW5jdGlvblxuIFx0XHR2YXIgdGhyZXcgPSB0cnVlO1xuIFx0XHR0cnkge1xuIFx0XHRcdG1vZHVsZXNbbW9kdWxlSWRdLmNhbGwobW9kdWxlLmV4cG9ydHMsIG1vZHVsZSwgbW9kdWxlLmV4cG9ydHMsIF9fd2VicGFja19yZXF1aXJlX18pO1xuIFx0XHRcdHRocmV3ID0gZmFsc2U7XG4gXHRcdH0gZmluYWxseSB7XG4gXHRcdFx0aWYodGhyZXcpIGRlbGV0ZSBpbnN0YWxsZWRNb2R1bGVzW21vZHVsZUlkXTtcbiBcdFx0fVxuXG4gXHRcdC8vIEZsYWcgdGhlIG1vZHVsZSBhcyBsb2FkZWRcbiBcdFx0bW9kdWxlLmwgPSB0cnVlO1xuXG4gXHRcdC8vIFJldHVybiB0aGUgZXhwb3J0cyBvZiB0aGUgbW9kdWxlXG4gXHRcdHJldHVybiBtb2R1bGUuZXhwb3J0cztcbiBcdH1cblxuXG4gXHQvLyBleHBvc2UgdGhlIG1vZHVsZXMgb2JqZWN0IChfX3dlYnBhY2tfbW9kdWxlc19fKVxuIFx0X193ZWJwYWNrX3JlcXVpcmVfXy5tID0gbW9kdWxlcztcblxuIFx0Ly8gZXhwb3NlIHRoZSBtb2R1bGUgY2FjaGVcbiBcdF9fd2VicGFja19yZXF1aXJlX18uYyA9IGluc3RhbGxlZE1vZHVsZXM7XG5cbiBcdC8vIGRlZmluZSBnZXR0ZXIgZnVuY3Rpb24gZm9yIGhhcm1vbnkgZXhwb3J0c1xuIFx0X193ZWJwYWNrX3JlcXVpcmVfXy5kID0gZnVuY3Rpb24oZXhwb3J0cywgbmFtZSwgZ2V0dGVyKSB7XG4gXHRcdGlmKCFfX3dlYnBhY2tfcmVxdWlyZV9fLm8oZXhwb3J0cywgbmFtZSkpIHtcbiBcdFx0XHRPYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgbmFtZSwgeyBlbnVtZXJhYmxlOiB0cnVlLCBnZXQ6IGdldHRlciB9KTtcbiBcdFx0fVxuIFx0fTtcblxuIFx0Ly8gZGVmaW5lIF9fZXNNb2R1bGUgb24gZXhwb3J0c1xuIFx0X193ZWJwYWNrX3JlcXVpcmVfXy5yID0gZnVuY3Rpb24oZXhwb3J0cykge1xuIFx0XHRpZih0eXBlb2YgU3ltYm9sICE9PSAndW5kZWZpbmVkJyAmJiBTeW1ib2wudG9TdHJpbmdUYWcpIHtcbiBcdFx0XHRPYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgU3ltYm9sLnRvU3RyaW5nVGFnLCB7IHZhbHVlOiAnTW9kdWxlJyB9KTtcbiBcdFx0fVxuIFx0XHRPYmplY3QuZGVmaW5lUHJvcGVydHkoZXhwb3J0cywgJ19fZXNNb2R1bGUnLCB7IHZhbHVlOiB0cnVlIH0pO1xuIFx0fTtcblxuIFx0Ly8gY3JlYXRlIGEgZmFrZSBuYW1lc3BhY2Ugb2JqZWN0XG4gXHQvLyBtb2RlICYgMTogdmFsdWUgaXMgYSBtb2R1bGUgaWQsIHJlcXVpcmUgaXRcbiBcdC8vIG1vZGUgJiAyOiBtZXJnZSBhbGwgcHJvcGVydGllcyBvZiB2YWx1ZSBpbnRvIHRoZSBuc1xuIFx0Ly8gbW9kZSAmIDQ6IHJldHVybiB2YWx1ZSB3aGVuIGFscmVhZHkgbnMgb2JqZWN0XG4gXHQvLyBtb2RlICYgOHwxOiBiZWhhdmUgbGlrZSByZXF1aXJlXG4gXHRfX3dlYnBhY2tfcmVxdWlyZV9fLnQgPSBmdW5jdGlvbih2YWx1ZSwgbW9kZSkge1xuIFx0XHRpZihtb2RlICYgMSkgdmFsdWUgPSBfX3dlYnBhY2tfcmVxdWlyZV9fKHZhbHVlKTtcbiBcdFx0aWYobW9kZSAmIDgpIHJldHVybiB2YWx1ZTtcbiBcdFx0aWYoKG1vZGUgJiA0KSAmJiB0eXBlb2YgdmFsdWUgPT09ICdvYmplY3QnICYmIHZhbHVlICYmIHZhbHVlLl9fZXNNb2R1bGUpIHJldHVybiB2YWx1ZTtcbiBcdFx0dmFyIG5zID0gT2JqZWN0LmNyZWF0ZShudWxsKTtcbiBcdFx0X193ZWJwYWNrX3JlcXVpcmVfXy5yKG5zKTtcbiBcdFx0T2JqZWN0LmRlZmluZVByb3BlcnR5KG5zLCAnZGVmYXVsdCcsIHsgZW51bWVyYWJsZTogdHJ1ZSwgdmFsdWU6IHZhbHVlIH0pO1xuIFx0XHRpZihtb2RlICYgMiAmJiB0eXBlb2YgdmFsdWUgIT0gJ3N0cmluZycpIGZvcih2YXIga2V5IGluIHZhbHVlKSBfX3dlYnBhY2tfcmVxdWlyZV9fLmQobnMsIGtleSwgZnVuY3Rpb24oa2V5KSB7IHJldHVybiB2YWx1ZVtrZXldOyB9LmJpbmQobnVsbCwga2V5KSk7XG4gXHRcdHJldHVybiBucztcbiBcdH07XG5cbiBcdC8vIGdldERlZmF1bHRFeHBvcnQgZnVuY3Rpb24gZm9yIGNvbXBhdGliaWxpdHkgd2l0aCBub24taGFybW9ueSBtb2R1bGVzXG4gXHRfX3dlYnBhY2tfcmVxdWlyZV9fLm4gPSBmdW5jdGlvbihtb2R1bGUpIHtcbiBcdFx0dmFyIGdldHRlciA9IG1vZHVsZSAmJiBtb2R1bGUuX19lc01vZHVsZSA/XG4gXHRcdFx0ZnVuY3Rpb24gZ2V0RGVmYXVsdCgpIHsgcmV0dXJuIG1vZHVsZVsnZGVmYXVsdCddOyB9IDpcbiBcdFx0XHRmdW5jdGlvbiBnZXRNb2R1bGVFeHBvcnRzKCkgeyByZXR1cm4gbW9kdWxlOyB9O1xuIFx0XHRfX3dlYnBhY2tfcmVxdWlyZV9fLmQoZ2V0dGVyLCAnYScsIGdldHRlcik7XG4gXHRcdHJldHVybiBnZXR0ZXI7XG4gXHR9O1xuXG4gXHQvLyBPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGxcbiBcdF9fd2VicGFja19yZXF1aXJlX18ubyA9IGZ1bmN0aW9uKG9iamVjdCwgcHJvcGVydHkpIHsgcmV0dXJuIE9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHkuY2FsbChvYmplY3QsIHByb3BlcnR5KTsgfTtcblxuIFx0Ly8gX193ZWJwYWNrX3B1YmxpY19wYXRoX19cbiBcdF9fd2VicGFja19yZXF1aXJlX18ucCA9IFwiXCI7XG5cblxuIFx0Ly8gTG9hZCBlbnRyeSBtb2R1bGUgYW5kIHJldHVybiBleHBvcnRzXG4gXHRyZXR1cm4gX193ZWJwYWNrX3JlcXVpcmVfXyhfX3dlYnBhY2tfcmVxdWlyZV9fLnMgPSBcIi4vcGFnZXMvcXVlbXNvbW9zLmpzXCIpO1xuIiwiaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQge1xyXG4gICAgQ29sbGFwc2UsXHJcbiAgICBOYXZiYXIsXHJcbiAgICBOYXZiYXJUb2dnbGVyLFxyXG4gICAgTmF2YmFyQnJhbmQsXHJcbiAgICBOYXYsXHJcbiAgICBOYXZJdGVtLFxyXG4gICAgTmF2TGluayxcclxufSBmcm9tICdyZWFjdHN0cmFwJztcclxuXHJcbmNvbnN0IE1lbnUgPSAoKSA9PiB7XHJcbiAgICBjb25zdCBbaXNPcGVuLCBzZXRJc09wZW5dID0gdXNlU3RhdGUoZmFsc2UpO1xyXG5cclxuICAgIGNvbnN0IHRvZ2dsZSA9ICgpID0+IHNldElzT3BlbighaXNPcGVuKTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgIDxOYXZiYXIgY29sb3I9XCJkYXJrXCIgZGFyayBleHBhbmQ9XCJtZFwiPlxyXG4gICAgICAgICAgICAgICAgPE5hdmJhckJyYW5kIGhyZWY9XCIvXCI+V2FsbEJvdHog8J+kljwvTmF2YmFyQnJhbmQ+XHJcbiAgICAgICAgICAgICAgICA8TmF2YmFyVG9nZ2xlciBvbkNsaWNrPXt0b2dnbGV9IC8+XHJcbiAgICAgICAgICAgICAgICA8Q29sbGFwc2UgaXNPcGVuPXtpc09wZW59IG5hdmJhcj5cclxuICAgICAgICAgICAgICAgICAgICA8TmF2IGNsYXNzTmFtZT1cIm1yLWF1dG9cIiBuYXZiYXI+XHJcblxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8TmF2SXRlbT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZMaW5rIGhyZWY9XCIvXCI+SW7DrWNpbzwvTmF2TGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9OYXZJdGVtPlxyXG5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPE5hdkl0ZW0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TmF2TGluayBocmVmPVwiL3Byb2pldG9zXCI+UHJvamV0bzwvTmF2TGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9OYXZJdGVtPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICAgICAgPE5hdkl0ZW0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TmF2TGluayBocmVmPVwiL2V2ZW50b3NcIj5FdmVudG9zPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L05hdkl0ZW0+XHJcblxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8TmF2SXRlbT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZMaW5rIGhyZWY9XCIvZXF1aXBlXCI+RXF1aXBlPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L05hdkl0ZW0+XHJcblxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8TmF2SXRlbT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxOYXZMaW5rIGhyZWY9XCIvcXVlbXNvbW9zXCI+UXVlbSBTb21vczwvTmF2TGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9OYXZJdGVtPlxyXG4gICAgICAgICAgICAgICAgICAgIDwvTmF2PlxyXG4gICAgICAgICAgICAgICAgPC9Db2xsYXBzZT5cclxuICAgICAgICAgICAgPC9OYXZiYXI+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICApO1xyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBNZW51IiwiaW1wb3J0IE1lbnUgZnJvbSAnLi4vY29tcG9uZW50cy9NZW51JztcclxuXHJcbmltcG9ydCAnYm9vdHN0cmFwL2Rpc3QvY3NzL2Jvb3RzdHJhcC5taW4uY3NzJztcclxuXHJcbmltcG9ydCB7SnVtYm90cm9uLCBDb250YWluZXJ9IGZyb20gJ3JlYWN0c3RyYXAnO1xyXG5cclxuZnVuY3Rpb24gUXVlbVNvbW9zKCkge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICA8TWVudSAvPlxyXG4gICAgICAgICAgICA8SnVtYm90cm9uIGZsdWlkIGNsYXNzTmFtZT1cInNvYnJlXCI+XHJcbiAgICAgICAgICAgIDxzdHlsZT57YC5zb2JyZXtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy10b3A6IDgwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctYm90dG9tOiA4MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjREFBNTIwO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZmZjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMHJlbSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgfWB9PC9zdHlsZT5cclxuXHJcbiAgICAgICAgICAgICAgICA8Q29udGFpbmVyPlxyXG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXJcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT0nZGlzcGxheS00Jz5Tb2JyZSBhIFJvYsOzdGljYTwvaDE+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcblxyXG5cclxuICAgICAgICAgICAgICAgIDwvQ29udGFpbmVyPlxyXG4gICAgICAgICAgICA8L0p1bWJvdHJvbj5cclxuXHJcbiAgICAgICAgICAgIDxKdW1ib3Ryb24gZmx1aWQgY2xhc3NOYW1lPVwiaGVhZC1zb2JyZVwiPlxyXG4gICAgICAgICAgICA8c3R5bGU+e2AuaGVhZC1zb2JyZXtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy10b3A6IDgwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmctYm90dG9tOiA4MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjREFBNTIwO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogI2ZmZjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMHJlbSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuZmVhdHVyZXR0ZS1kaXZpZGVyIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiA1cmVtIDA7IFxyXG4gICAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgfWB9PC9zdHlsZT5cclxuXHJcbiAgICAgICAgICAgICAgICA8Q29udGFpbmVyPlxyXG4gICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLThcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzPVwicGItNCBtYi00IGZzdC1pdGFsaWMgYm9yZGVyLWJvdHRvbVwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgTyBDb21lw6dvIGRlIFR1ZG9cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9oMz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxhcnRpY2xlPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHA+T3MgYWx1bm9zIGRvIEluc3RpdHV0byBGZWRlcmFsIGRvIE5vcnRlIGRlIE1pbmFzIEdlcmFpcywgw4JuZ2VsbGEgZSBXZWxsaXNvbiwgbXVuaWRvcyBwZWxhIHZvbnRhZGUgZGUgY3JpYXIgdW0gcHJvamV0byBkZSBleHRlbnPDo28gdm9sdGFkbyBwYXJhIGEgcm9iw7N0aWNhLCBidXNjYXJhbSB1bShhKSBjb29yZGVuYWRvcihhKSBwYXJhIG8gbWVzbW8sIGVuY29udHJhbmRvIGEgRG9jZW50ZSBNYXJpYSBkYSBQZW5oYSwganVudG9zIGNyaWFyYW0gbyBwcm9qZXRvLjwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoci8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cD7Dgm5nZWxsYSBlcmEgZGEgTGljZW5jaWF0dXJhIGVtIEbDrXNpY2EsIFdlbGxpc29uIGVyYSBkbyBDdXJzbyBUZWNuaWNvIGVtIEluZm9ybcOhdGljYSBlIE1hcmlhIGRhIFBlbmhhLCBEb2NlbnRlIGRhIEFyZWEgZGUgRsOtc2ljYTwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5PYmpldGl2bzwvaDI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cD5Db20gb2JqZXRpdm8gZGUgaW5zdGlnYXIgb3MgYWx1bm9zIGFvIGVzdHVkbyBkZSBjb25jZWl0b3MgZsOtc2ljb3MsIG9zIHByZXNlbnRlcyBhY2Fkw6ptaWNvcyBkbyBjdXJzbyBkZSBsaWNlbmNpYXR1cmEgZG8gSUZOTUctIENhbXB1cyBTYWxpbmFzLCBkZXNlbnZvbHZlcmFtIHJvYsO0cyB2aXNhbmRvIHByb3BpY2lhciB1bSBhbWJpZW50ZSBlc3RpbXVsYW50ZSBlIGZhdm9yw6F2ZWwgYW8gZW5zaW5vIGRlIGbDrXNpY2EuIE8gcHJvamV0byBmb2kgY29vcmRlbmFkbyBwZWxhIHByb2Zlc3NvcmEgZGUgZsOtc2ljYSwgTWFyaWEgZGEgUGVuaGEsIGVtIDIwMjAuPC9wPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGgzPkFwbGljYcOnw6NvPC9oMz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwPlZpc2FuZG8gdXRpbGl6YXIgZmVycmFtZW50YXMgcXVlIGFndcOnYW0gYSBpbnZlc3RpZ2HDp8OjbyBjaWVudMOtZmljYSwgZm9tZW50b3UgbyBkZXNlbnZvbHZpbWVudG8gZGUgcm9iw7RzIHBhcmEgc2VyZW0gdXRpbGl6YWRvcyBkZSBtYW5laXJhIHByw6F0aWNhIG5vIGVuc2luby9hcHJlbmRpemFnZW0gZGUgZsOtc2ljYS4gT3MgYXBhcmF0b3Mgc8OjbyB1dGlsaXphZG9zIHBhcmEgZGVtb25zdHJhciBvcyBjb25jZWl0b3MgZGUgbWFuZWlyYSBhcGxpY8OhdmVsLCBlIHBhcmEgaXNzbyB1dGlsaXphbS1zZSB0b2RhcyBhcyBldGFwYXMgZGEgbW9udGFnZW0gZG9zIHJvYsO0cyBlIHRhbWLDqW0gc2V1IGZ1bmNpb25hbWVudG8uIE5vIGluw61jaW8gZG9zIHRyYWJhbGhvcywgb3MgZGlzY2VudGVzIGVsYWJvcmFtIHByb2pldG9zLCB2aXNhbmRvIHV0aWxpesOhLWxvcyBwYXJhIGVuc2luYXIgdW0gdMOzcGljbyBkZSBmw61zaWNhIG5vIGVuc2lubyBtw6lkaW8uPC9wPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvYXJ0aWNsZT5cclxuXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PiAgIFxyXG5cclxuICAgICAgICAgICAgICAgIDwvQ29udGFpbmVyPlxyXG4gICAgICAgICAgICA8L0p1bWJvdHJvbj5cclxuXHJcbiAgICAgICAgICAgIDxKdW1ib3Ryb24gZmx1aWQgY2xhc3NOYW1lPVwienpcIj5cclxuICAgICAgICAgICAgPHN0eWxlPntgLnp6e1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLXRvcDogODBweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1ib3R0b206IDgwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMzNjM2MzY7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAwcmVtICFpbXBvcnRhbnQ7XHJcblxyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLmNpcmN1bG97XHJcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDE0MHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIGhlaWdodDogMTQwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogYmx1ZTtcclxuICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDUycHg7XHJcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZy10b3A6IDI0cHg7XHJcblxyXG4gICAgICAgICAgICAgICAgfVxyXG5cclxuICAgICAgICAgICAgICAgIC5hbmcsIC5wZW5oYSwgLndlbGlzb217XHJcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg9IDEwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIGhlaWdodD0gMTAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplPSA0MHB4OyBcclxuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLXRvcD0gMjBweDsgXHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAuY2VudHJhbGl6YXJ7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAwIGF1dG8gIWltcG9ydGFudDtcclxuICAgICAgICAgICAgICAgICAgICBmbG9hdDogbm9uZSAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgLmZlYXR1cmV0dGUtZGl2aWRlciB7XHJcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiA1cmVtIDA7IFxyXG4gICAgICAgICAgICAgICAgICB9XHJcblxyXG4gICAgICAgICAgICAgICAgfWB9PC9zdHlsZT5cclxuICAgICAgICAgICAgICAgICAgICA8Q29udGFpbmVyPlxyXG4gICAgICAgICAgICAgICAgICAgIDxkaXYgYmFja2dyb3VuZC1jb2xvcj0nYmxhY2snPlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGVudFwiPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8Zm9vdGVyIGlkPVwibXlGb290ZXJcIj5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXJcIj5cclxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtc20tM1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg1PkluaWNpbzwvaDU+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9J2h0dHA6Ly9sb2NhbGhvc3Q6MzAwMCc+SW5pY2lvPC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9J2h0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9wcm9qZXRvcyc+UHJvamV0b3M8L2E+PC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0naHR0cDovL2xvY2FsaG9zdDozMDAwL2V2ZW50b3MnPkV2ZW50b3M8L2E+PC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0naHR0cDovL2xvY2FsaG9zdDozMDAwL2VxdWlwZSc+TWVtYnJvczwvYT48L2xpPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSdodHRwOi8vbG9jYWxob3N0OjMwMDAvcXVlbXNvbW9zJz5RdWVtIHNvbW9zPC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvbC1zbS0zXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDU+U29icmUgbsOzczwvaDU+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9XCJcIj5JbmZvcm1hw6fDtWVzIGRhIFJvYsOzdGljYTwvYT48L2xpPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPVwiaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9pZGFsaW5vLnJpYmVpcm8vXCI+RmVpcmEgZGUgQ2nDqm5jaWFzPC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9XCJodHRwczovL3lvdXR1YmUuY29tL2NoYW5uZWwvVUNTd09jVGVXQ21aQXJ6TVhCUGZZYzFBXCI+WW91VHViZTwvYT48L2xpPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC91bD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtc20tM1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg1PlN1cG9ydGU8L2g1PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVsPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPVwiaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS93YWxsYm90ei9cIj5GQVE8L2E+PC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj1cImh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vd2FsbGJvdHovXCI+VGVsZWZvbmVzPC9hPjwvbGk+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9XCJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tL3dhbGxib3R6L1wiPkNoYXQ8L2E+PC9saT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLXNtLTMgaW5mb1wiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg1PkluZm9ybWHDp8O1ZXM8L2g1PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHA+IEVudHJlIGVtIGNvbnRhdG8gZW0gY2FzbyBkZSBidWcuIDwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJzZWNvbmQtYmFyXCI+XHJcbiAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic29jaWFsLWljb25zXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPVwiaHR0cHM6Ly95b3V0dWJlLmNvbS9jaGFubmVsL1VDU3dPY1RlV0NtWkFyek1YQlBmWWMxQVwiIGNsYXNzPVwiWW91VHViZVwiPjxpIGNsYXNzPVwiZmEgZmEtZmFjZWJvb2tcIj48L2k+PC9hPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vd2FsbGJvdHovXCIgY2xhc3M9XCJpbnN0YWdyYW1cIj48aSBjbGFzcz1cImZhIGZhLWluc3RhZ3JhbVwiPjwvaT48L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZm9vdGVyPlxyXG4gICAgICAgICAgICA8c2NyaXB0IHNyYz1cImh0dHBzOi8vYWpheC5nb29nbGVhcGlzLmNvbS9hamF4L2xpYnMvanF1ZXJ5LzEuMTIuNC9qcXVlcnkubWluLmpzXCI+PC9zY3JpcHQ+XHJcbiAgICAgICAgICAgIDxzY3JpcHQgc3JjPVwiaHR0cDovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjMuNy9qcy9ib290c3RyYXAubWluLmpzXCI+PC9zY3JpcHQ+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG5cclxuXHJcbiAgICAgICAgICAgICAgICAgICAgPC9Db250YWluZXI+XHJcbiAgICAgICAgICAgICAgICA8L0p1bWJvdHJvbj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICApO1xyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBRdWVtU29tb3NcclxuIiwibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicmVhY3RcIik7IiwibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicmVhY3RzdHJhcFwiKTsiXSwic291cmNlUm9vdCI6IiJ9
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/quemsomos.js"));
+module.exports = __webpack_exports__;
+
+})();

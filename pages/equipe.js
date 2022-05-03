@@ -1,4 +1,5 @@
 import Menu from '../components/Menu';
+import Head from 'next/head';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,6 +8,9 @@ import {Jumbotron, Container} from 'reactstrap';
 function Equipe() {
     return (
         <div>
+            <Head>
+                <title>Equipe - WallBotz</title>
+            </Head>
             <Menu />
             
             <Jumbotron fluid className="projetos">

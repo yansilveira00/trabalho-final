@@ -2,5 +2,13 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/": "pages/index.js"
+=======
+  "/quemsomos": "pages/quemsomos.js",
+  "/projetos": "pages/projetos.js",
+  "/": "pages/index.js",
+  "/eventos": "pages/eventos.js",
+  "/equipe": "pages/equipe.js"
+>>>>>>> bb432d539de7b2898764a0149f35f71c7a2de877
 }

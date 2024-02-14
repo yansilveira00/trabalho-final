@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 self.__BUILD_MANIFEST = {__rewrites:[],"/":["static\u002Fcss\u002Fstyles.chunk.css","static\u002Fchunks\u002Fstyles.js","static\u002Fchunks\u002Fpages\u002Findex.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],sortedPages:["\u002F","\u002F_app","\u002F_error"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
+=======
+self.__BUILD_MANIFEST = {__rewrites:{beforeFiles:[],afterFiles:[],fallback:[]},"/":["static\u002Fchunks\u002Fpages\u002Findex.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/equipe":["static\u002Fchunks\u002Fpages\u002Fequipe.js"],"/eventos":["static\u002Fchunks\u002Fpages\u002Feventos.js"],"/projetos":["static\u002Fchunks\u002Fpages\u002Fprojetos.js"],"/quemsomos":["static\u002Fchunks\u002Fpages\u002Fquemsomos.js"],sortedPages:["\u002F","\u002F_app","\u002F_error","\u002Fequipe","\u002Feventos","\u002Fprojetos","\u002Fquemsomos"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
+>>>>>>> bb432d539de7b2898764a0149f35f71c7a2de877

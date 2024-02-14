@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../components/Menu';
 import { UncontrolledCarousel } from 'reactstrap';
+import Head from 'next/head';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,6 +10,9 @@ import {Jumbotron, Container} from 'reactstrap';
 function Projetos() {
     return (
         <div>
+            <Head>
+                <title>Projetos - WallBotz</title>
+            </Head>
             <Menu />
 
             <Jumbotron fluid className='sobre'>
